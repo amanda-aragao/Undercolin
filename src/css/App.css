@@ -1,0 +1,108 @@
+#root {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo-passarinho {
+  display: flex;
+  margin-top: 5rem;
+  margin-left: 28rem;
+  width: 23rem;
+  height: auto;
+  position: absolute;
+  will-change: filter;
+  transition: filter 300ms;
+  animation: moveUpDown 2s infinite alternate ease-in-out;
+}
+
+@keyframes moveUpDown {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 20px;
+  }
+}
+
+.logo-passarinho:hover {
+  filter: drop-shadow(0 0 0.8em rgba(247, 148, 29, 0.7));
+  transform: scale(1.1);
+}
+
+.logo-font {
+  display: flex;
+  height: auto;
+  width: 70%;
+  margin-top: 20rem;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.planoA {
+  display: flex;
+  font-size: 1rem;
+  color: #d0cccb;
+  font-family: 'Bernard MT Condensed', roboto, sans; 
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 45.5rem;
+  
+}
+
+.card {
+  justify-content: center;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.card img {
+  flex-direction: row;
+  display: flex;
+  margin-top: 6rem;
+  width: auto;
+  height: 40px;
+}
+
+.card img:hover{
+  filter: drop-shadow(0 0 0.8em rgba(255, 255, 255, 0.7));
+  transform: scale(1.1);
+
+}
+
+
+/* @media (min-width: 768px) {
+  .logo-passarinho {
+    height: 27em;
+  }
+
+
+  .card {
+    flex-direction: row;
+  }
+
+  .planoA {
+    font-size: 1.5rem;
+  }
+}
+ */

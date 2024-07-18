@@ -1,0 +1,50 @@
+
+
+.historia {
+  display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+
+
+p {
+  color: #fff;
+  font-family: 'Bernard MT Condensed', roboto, sans;
+  font-size: 2rem;
+  display: flex;
+  padding: 5rem, 5rem, 5rem, 5rem;
+   margin-left: 45rem;
+  margin-top: 5.5rem;
+}
+
+.textoHistoria {
+  margin-top: 3rem;
+  display: flex;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'roboto';
+  font-size: 1.5rem;
+  padding-left: 6.5rem;
+  width: 42%;
+  align-items: center;
+}
+
+.fotoShow{
+  display: flex;
+  width: 35%;
+  height:35%;
+  margin-top: 3.5rem;
+  border-radius: 3%;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+} 
+
+/* .element1{
+  position: absolute;
+  width: 360px;
+  z-index: 1;
+  rotate: -75deg;
+  bottom: 150px; 
+  right: -40px;
+} */
+
+

@@ -1,29 +1,27 @@
-// import { useState } from 'react'
-import './App.css'
+import './css/App.css'
+
+import { Link } from 'react-router-dom';
+
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <>
       <div className='logos'>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src='/src/images/underPassarinho.png' className='logo-passarinho' alt='Undercolin Banda'/>
-           {/* aqui você vai por a logo e ao clicar vai para a aba de shows ou foto */}
-        </a>
+      <Link to="/home">
+      <img src='/src/images/underPassarinho.png' className='logo-passarinho' alt='Undercolin Banda' />
+    </Link>
         
       <img src='/src/images/underFont.png' className='logo-font' alt='Fonte Undercolin' />
       </div>
       <div className="card">
-        {/* <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button> */}
-        {/* <p className='planoA'> Sem plano B SÓ PLANO A! </p> */}
         <img src='/src/images/spotify.png'/>
         <img src='/src/images/youtube.png'/>
         <img src='/src/images/whatsapp.png'/>
+        <img src='/src/images/instagram.png' className='instagram'/>
+
       </div>
-      <p className="read-the-docs">
+      <p className="planoA">
         Clique aqui para conhecer nosso som! 
       </p>
     </>
