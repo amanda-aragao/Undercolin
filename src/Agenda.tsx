@@ -1,5 +1,5 @@
 import './css/agenda.css';
-export function Agenda(){
+export function Agenda() {
   return (
     <section className="agendaSection">
       <h1>AGENDA</h1>
@@ -16,7 +16,6 @@ export function Agenda(){
           <p>Av. Dr. Roberto de Almeida Vinhas, 10473 - Maracanã, Praia Grande - SP </p>
           <a href="#">Ingresso</a>
         </div>
-  
       </div>
     </section>
   );

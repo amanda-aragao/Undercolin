@@ -20,7 +20,7 @@ export function Nav({ menuIsVisible, setMenuIsVisible }: MenuProps){
       <nav className='navPrincipal'>
 
         <a className='topicNav'>AGENDA</a>
-        <a className='topicNav'>HISTÓRIA</a>
+        <a className='topicNav' href="/historia">HISTÓRIA</a>
         <a className='topicNav'>CONTATO</a>
         <img src='/src/images/underFont.png' alt='Undercolin Fonte' className='underNav'/>
         <a className='topicNav'>MATERIAL</a>
