@@ -4,17 +4,17 @@ export const Container = styled.div`
   display: flex;
   position: fixed;
   top: 0;
-  height: 6.5rem;
+  height: 7rem;
   width: 100%;
-  background-color: rgba(17, 20, 35, 0.3); 
+  background-color:  rgb(30, 31, 36);
   box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
-  z-index: 1000; 
+  z-index: 100; 
   
   .navPrincipal {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-left: 18rem;
+    padding-left: 25.5rem;
   }
     
   .topicNav {
@@ -41,42 +41,51 @@ export const Container = styled.div`
   }
   
   .underNav {
-  width: 20rem;
-  height: auto;
-  padding: 2rem;
-  display: inline-block; 
+    width: 25rem;
+    height: auto;
+    padding: 1rem;
+    display: inline-block; 
   }
 
   .mobile {
     color: #fff;
-    padding-top: 1.8rem;
-    margin-left: 18rem; 
-    z-index: 1;
-    width: 2.5rem;
+    margin-top: 2.4rem;
+    margin-left: 21rem;
+    // width: 80%;
+    // size: 5rem;
+    
+
+    
   }
 
-  @media (max-width: 767px) {
-    .navPrincipal {
-      flex-direction: column; 
-    }
-  }
+  // @media (max-width: 767px) {
+  //   .navPrincipal {
+  //     flex-direction: column; 
+  //   }
+  //   .mobile svg {
+  //     width: 8%; /* Tamanho menor para telas menores */
+  //   }
+  // }
 
-  @media (min-width: 2375px) {
-    .mobile {
-      margin-left: 58%;
-    }
-  }
+  // @media (min-width: 2375px) {
+  //   .mobile {
+  //     margin-left: 35%;
+  //   }
+  //   .mobile svg {
+  //     width: 10%; /* Tamanho maior para telas muito grandes */
+  //   }
+  // }
 
-  @media (max-width: 412px) {
-    .mobile {
-      margin-left: 35%;  
-    }
-    svg {
-      width: 8.5%;
-    }
-    p {
-      font-size: 2rem;
-      margin-left: 2rem;
-    }
-  }
+  // @media (max-width: 412px) {
+  //   .mobile {
+  //     margin-left: 25%;  
+  //   }
+  //   .mobile svg {
+  //     width: 8.5%;
+  //   }
+  //   p {
+  //     font-size: 2rem;
+  //     margin-left: 2rem;
+  //   }
+  // }
 `;

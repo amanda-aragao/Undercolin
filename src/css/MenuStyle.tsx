@@ -26,12 +26,12 @@ export const MenuStyle = styled.section<MenuStyleProps>`
   svg {
     position: absolute;
     top: 2rem;
-    padding-left: 1.5rem;
+    margin-left: 2rem;
     color: #fff;
     transform: rotate(45deg);
     transition: 0.7s;
-    width: 35px;
-    height: 35px;
+    width: 2.5rem;
+    height: 3rem;
   }
 
   nav {
@@ -41,10 +41,10 @@ export const MenuStyle = styled.section<MenuStyleProps>`
     flex-direction: column;
     transform: scale(0.7);
     transition: 0.7s;
-    margin-top: 4rem;
-    margin-left: 4rem;
+    margin-top: 3rem;
+    margin-left: 3.5rem;
     background-color: transparent;
-    gap: 3rem;
+    gap: 4rem;
   }
 
   .topicosMenu {
@@ -53,7 +53,7 @@ export const MenuStyle = styled.section<MenuStyleProps>`
     border-radius: 10px;
     border: 1px solid #fff;
     padding: 1rem;
-    width: 9rem;
+    width: 12rem;
     font-size: 1.2rem;
     letter-spacing: 1.5px;
     color: #fff;

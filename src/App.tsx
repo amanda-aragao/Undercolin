@@ -9,16 +9,16 @@ function App() {
     <>
       <div className='logos'>
       <Link to="/home">
-      <img src='/src/images/underPassarinho.png' className='logo-passarinho' alt='Undercolin Banda' />
+      <img src='/src/assets/images/underPassarinho.png' className='logo-passarinho' alt='Undercolin Banda' />
     </Link>
         
-      <img src='/src/images/underFont.png' className='logo-font' alt='Fonte Undercolin' />
+      <img src='/src/assets/images/underFont.png' className='logo-font' alt='Fonte Undercolin' />
       </div>
       <div className="card">
-        <img src='/src/images/spotify.png'/>
-        <img src='/src/images/youtube.png'/>
-        <img src='/src/images/whatsapp.png'/>
-        <img src='/src/images/instagram.png' className='instagram'/>
+        <img src='/src/assets/images/spotify.png'/>
+        <img src='/src/assets/images/youtube.png'/>
+        <img src='/src/assets/images/whatsapp.png'/>
+        <img src='/src/assets/images/instagram.png' className='instagram'/>
 
       </div>
       <p className="planoA">

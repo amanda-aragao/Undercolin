@@ -1,49 +1,57 @@
 .agendaSection {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  /* background-color: rgba(17, 20, 35, 0.3); */
-  background: rgb(17,20,35);
-background: linear-gradient(0deg, rgba(17,20,35,0.3) 95%, rgba(36,36,36,0.26) 100%);
+  background-color: rgb(30, 31, 36);
   border-radius: 20px;
-  width: 85%;
-  height: auto;
-  margin: auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100;
+  width: 100%; /* Ajustar conforme necessário */
+  max-width: 1900px; /* Ajuste de acordo com a necessidade */
+  margin: 0 auto; /* Centraliza horizontalmente */
+  margin-top: 80rem;
+  padding: 0 15px;
+  position: relative; 
+  /* border: 1px solid red; */
 }
 
-h1 {
+.custom-line {
+  border: none; 
+  border-top: 1px solid #fff; 
+  width: 100%; 
+  margin: 0;
+}
+
+.tituloAgenda {
+  margin: 0;
   color: #fff;
   font-size: 2.5rem;
   font-family: "Din Condensed Web", sans-serif;
   text-align: center;
-  margin-bottom: 20px;
+  margin-top: 15px;
 }
 
 .agendaShows {
   display: grid;
-  grid-template-columns: 1fr 1fr 3fr 1fr; 
-  margin-bottom: 15px;
-  width: 65rem;
+  grid-template-columns: 1fr 1fr 3fr 1fr;
+  width: 100%; 
+  max-width: 65rem;
   justify-items: center;
-
+  gap: 5px;
+  height: 10rem;
 }
 
 .show {
-  display: contents; /* Permite que os filhos sejam grid items */
+  display: contents;
 }
 
-.show span, .show h2, .show p, .show a {
+.show span,
+.show h2,
+.show p,
+.show a {
   color: #fff;
   font-size: 1.5rem;
   text-align: center;
   font-family: "Din Condensed Web", sans-serif;
-  align-self: center; 
+  align-self: center;
 }
 
 .show p {
@@ -60,4 +68,3 @@ h1 {
 .show a:hover {
   text-decoration: underline;
 }
-
