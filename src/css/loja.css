@@ -3,14 +3,22 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Garante que ocupe toda a altura da viewport */
+  height: 100vh; 
   width: 100%;
 }
 
 .store {
-  display: block;
-  margin: 8rem auto; /* Corrigido para margens automáticas e espaçamento superior */
-  width: 90%; /* Ajuste conforme necessário */
-  max-width: 800px;
+  margin: 1.5rem auto; 
+  width: 90%;
+  max-width: 1000px;
+  margin-bottom: 2rem;
   
-} 
+}   
+
+.lojaSection{
+  width: 100%;
+  display: block;
+  margin-top: 5.5rem;
+  margin-bottom: 5rem;
+  background-color: #242424;
+}

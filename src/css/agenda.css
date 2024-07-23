@@ -2,40 +2,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(30, 31, 36);
+  background-color:  rgb(30, 31, 36);
   border-radius: 20px;
-  width: 100%; /* Ajustar conforme necessário */
-  max-width: 1900px; /* Ajuste de acordo com a necessidade */
-  margin: 0 auto; /* Centraliza horizontalmente */
-  margin-top: 80rem;
-  padding: 0 15px;
-  position: relative; 
-  /* border: 1px solid red; */
+  width: 100%;
+  max-width: 1900px;
+  margin: 0 auto;
+  margin-top: 125rem;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  position: relative;
+  box-shadow: 0px 0 10px rgba(68, 67, 67, 0.5);
 }
 
 .custom-line {
-  border: none; 
-  border-top: 1px solid #fff; 
-  width: 100%; 
+  border: none;
+  border-top: 1px solid #fff;
+  width: 100%;
   margin: 0;
 }
 
 .tituloAgenda {
   margin: 0;
   color: #fff;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: "Din Condensed Web", sans-serif;
   text-align: center;
-  margin-top: 15px;
+  /* margin-top: 10px; */
 }
 
 .agendaShows {
   display: grid;
   grid-template-columns: 1fr 1fr 3fr 1fr;
-  width: 100%; 
+  width: 100%;
   max-width: 65rem;
   justify-items: center;
-  gap: 5px;
+  /* gap: 10px; */
   height: 10rem;
 }
 

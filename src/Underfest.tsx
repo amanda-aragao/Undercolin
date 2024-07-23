@@ -6,8 +6,11 @@ export function Underfest(){
     return (
       <>
         <div className='underfestContainer'>
-            <h1>Underfest</h1>
-            <p>Underfest is a festival that takes place in the underground of the city.</p>
+          <hr className='detalheLinhaUnderfest' />
+            <h1>UNDERFEST</h1>
+            <hr className='detalheLinhaUnderfest' />
+
+            <h2>Conheça o festival organizado pela banda Undercolin que visa apoiar as bandas e comerciantes locais.</h2>
         </div>
       </>
     )
