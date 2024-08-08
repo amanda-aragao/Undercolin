@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  
   display: flex;
   position: fixed;
   top: 0;
@@ -47,15 +48,21 @@ export const Container = styled.div`
     display: inline-block; 
   }
 
+  .linkNav:hover {
+    transform: none; 
+    box-shadow: none;
+    border: none;
+    outline: none;
+    // filter: none;
+    filter: drop-shadow(0 0 0.1em rgba(255, 255, 255, 0.8));
+
+
+  }
+
   .mobile {
     color: #fff;
     margin-top: 2.4rem;
-    margin-left: 21rem;
-    // width: 80%;
-    // size: 5rem;
-    
-
-    
+    margin-left: 20rem;
   }
 
   // @media (max-width: 767px) {

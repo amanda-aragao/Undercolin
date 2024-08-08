@@ -2,13 +2,20 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './css/material.css';
+import { Link } from 'react-router-dom';
+
+
+
+
+
 export function Material() {
   return (
     <>
-      <hr className='detalheLinha'/>
+
+      <hr className='detalheLinha' />
       <h2 className='materialTitulo'>MATERIAL</h2>
-      <hr className='detalheLinha'/>
-      
+      <hr className='detalheLinha' />
+
       <div className="material-container" id='carousel-container'>
         <div id="carouselExampleIndicators" className="carousel slide">
           <div className="carousel-indicators">
@@ -36,6 +43,9 @@ export function Material() {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
+        <Link to={'/material'}>
+          <a> CLIQUE AQUI E CONFIRA OS NOSSOS CONTEÚDOS</a>
+        </Link>
       </div>
     </>
   );

@@ -1,50 +1,57 @@
-
+.historiaContainer {
+  margin-top: 12rem;
+}
 
 .historia {
   display: flex;
   flex-direction: row;
-  gap: 10rem;
+  gap: 4rem;
+  width: 100%;
+  padding: 5rem;
+  padding-top: 4rem;
+
+}
+
+.textoContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem; 
 }
 
 
-p {
+.tituloHistoria {
+  padding: 0;
   color: #fff;
   font-family: 'DIN Condensed Web', roboto, sans;
-  font-size: 2rem;
+  font-size: 3rem;
+  letter-spacing: 2px;
   display: flex;
-  padding: 5rem, 5rem, 5rem, 5rem;
-   margin-left: 45rem;
-  margin-top: 5.5rem;
+  justify-content: center;
 }
 
 .textoHistoria {
-  margin-top: 3rem;
   display: flex;
   color: #fff;
   text-decoration: none;
-  font-family: 'roboto';
+  font-family: 'DIN Condensed Web', roboto, sans;
   font-size: 1.5rem;
-  padding-left: 6.5rem;
-  width: 42%;
-  align-items: center;
+  text-align: center;
+  flex-direction: row;
 }
 
-.fotoShow{
+.fotoShow {
   display: flex;
-  width: 35%;
-  height:35%;
-  margin-top: 3.5rem;
+  width: 40%;
+  height: 50%;
   border-radius: 3%;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
-} 
+}
 
-/* .element1{
-  position: absolute;
-  width: 360px;
-  z-index: 1;
-  rotate: -75deg;
-  bottom: 150px; 
-  right: -40px;
-} */
-
-
+.detalheLinhaHist {
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 1900px;
+  color: #fff;
+  display: flex;
+}

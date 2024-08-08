@@ -2,16 +2,22 @@
 
 import './css/underfest.css'
 
-export function Underfest(){
-    return (
-      <>
-        <div className='underfestContainer'>
-          <hr className='detalheLinhaUnderfest' />
-            <h1>UNDERFEST</h1>
-            <hr className='detalheLinhaUnderfest' />
+export function Underfest() {
+  return (
+    <>
+      <div className='underfestContainer'>
+        <hr className='detalheLinhaUnderfest' />
+        <h2 className='tituloUnderfest'>UNDERFEST</h2>
+        <hr className='detalheLinhaUnderfest' />
 
-            <h2>Conheça o festival organizado pela banda Undercolin que visa apoiar as bandas e comerciantes locais.</h2>
-        </div>
-      </>
-    )
+        <a className='subtituloUnderfest'>
+          CONHEÇA O FESTIVAL ORGANIZADO POR NÓS QUE VISA APOIAR AS BANDAS E COMERCIANTES LOCAIS.
+        </a>
+        <section className='selectUnderfest'>
+          <p className='textUnderfest'>O UNDERFEST TEVE SUA PRIMEIRA EDIÇÃO EM 2023 COM AS BANDAS BLABLA</p>
+        </section>
+
+      </div>
+    </>
+  )
 }

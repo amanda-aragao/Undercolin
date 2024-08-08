@@ -9,6 +9,8 @@ export const MenuStyle = styled.section<MenuStyleProps>`
   position: fixed;
   width: 18rem;
   height: 100%;
+  border-top-left-radius: 20px; 
+  border-bottom-left-radius: 20px; 
   top: 0;
   right: 0;
   bottom: 0;
@@ -25,16 +27,15 @@ export const MenuStyle = styled.section<MenuStyleProps>`
 
   svg {
     position: absolute;
-    top: 2rem;
-    margin-left: 2rem;
+    top: 2.2rem;
     color: #fff;
     transform: rotate(45deg);
     transition: 0.7s;
-    width: 2.5rem;
+    width: 28.5rem;
     height: 3rem;
   }
 
-  nav {
+  aside {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,19 +43,19 @@ export const MenuStyle = styled.section<MenuStyleProps>`
     transform: scale(0.7);
     transition: 0.7s;
     margin-top: 3rem;
-    margin-left: 3.5rem;
+    margin-left: 2rem;
     background-color: transparent;
-    gap: 4rem;
+    gap: 5rem;
   }
 
   .topicosMenu {
-    font-family: 'Bernard MT Condensed', roboto, sans;
+    font-family: "DIN Condensed Web", roboto, sans;
     font-weight: bold;
     border-radius: 10px;
     border: 1px solid #fff;
-    padding: 1rem;
-    width: 12rem;
-    font-size: 1.2rem;
+    padding: 2rem;
+    width: 15rem;
+    font-size: 2rem;
     letter-spacing: 1.5px;
     color: #fff;
     text-decoration: none;

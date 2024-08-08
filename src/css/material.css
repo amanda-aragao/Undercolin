@@ -1,12 +1,30 @@
+.sectionMaterial{
+  background: linear-gradient(to bottom, #242424 1%, #000 100%); 
+  width: 100%;
+}
+
+
 #carousel-container {
   display: flex;
   justify-content: center; 
   align-items: center; 
-  width: 100%;
-  /* max-width: 1900px; */
-  background: linear-gradient(to bottom, #242424 1%, #000 100%); 
-  padding: 4rem 0;
+  padding: 3rem 0;
+
 }
+
+.material-container{
+display: flex;
+flex-direction: column;
+}
+
+.material-container a{
+  padding: 2rem;
+  font-size: 20px;
+  color: #fff;
+  z-index: 1;
+  text-decoration: none;
+}
+  
 
 .carousel {
   width: 100%;
@@ -34,19 +52,10 @@
   font-family: "Din Condensed Web", sans-serif;
   text-align: center;
   letter-spacing: 2px;
-  margin: 0;
-  padding:1, 0;
+  padding:0 ;
   color: #fff;
 }
 
-#iconPrevNext{
-  color:aqua;
-}
-
-/* .carousel-control-next-icon, .carousel-control-prev-icon{
-  width: 5rem;
-  height: 5rem;
-} */
 
 .carousel-control-next, .carousel-control-prev{
   width: 8%;

@@ -1,7 +1,5 @@
 :root {
-  font-family: 'Bernard MT Condensed', roboto, sans;
-  /* line-height: 1.5; */
-  /* font-weight: 400; */
+  font-family: "DIN Condensed Web", 'Bernard MT Condensed', roboto, sans;
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;

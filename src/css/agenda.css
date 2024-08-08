@@ -7,8 +7,8 @@
   width: 100%;
   max-width: 1900px;
   margin: 0 auto;
-  margin-top: 125rem;
-  padding-top: 4rem;
+  margin-top: 135rem;
+  padding-top: 3.5rem;
   padding-bottom: 3rem;
   position: relative;
   box-shadow: 0px 0 10px rgba(68, 67, 67, 0.5);
@@ -27,18 +27,20 @@
   font-size: 3rem;
   font-family: "Din Condensed Web", sans-serif;
   text-align: center;
-  /* margin-top: 10px; */
 }
 
 .agendaShows {
   display: grid;
   grid-template-columns: 1fr 1fr 3fr 1fr;
-  width: 100%;
   max-width: 65rem;
   justify-items: center;
-  /* gap: 10px; */
   height: 10rem;
 }
+
+.sectionAgenda{
+  width: 100%;
+}
+
 
 .show {
   display: contents;

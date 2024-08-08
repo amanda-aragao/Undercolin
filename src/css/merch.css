@@ -1,0 +1,85 @@
+.merchContainer{
+  margin-top: 12rem;
+}
+
+
+.tituloMerch{
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-family: 'DIN Condensed Web', roboto, sans;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  justify-content: center;
+  padding: 0rem;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem; 
+  width: 60%;
+  margin: 0 auto;
+}
+
+.grid-image {
+  margin-top: 4rem;
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Mantém a proporção da imagem */
+}
+
+
+.detalheLinhaMerch1 {
+  width: 75%;
+  color: #fff;
+  display: flex;
+}
+
+.detalheLinhaMerch2 {
+  width: 73.5%;
+  margin-left: 30rem;
+  color: #fff;
+  display: flex;
+}
+
+.precoCamisa{
+  font-family: 'DIN Condensed Web', roboto, sans;
+  display:flex;
+  color:#fff;
+  padding-top: 0.5rem;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 1.3rem;
+}
+
+.tituloCamisa{
+  font-family: 'DIN Condensed Web', roboto, sans;
+  display:flex;
+  color:#fff;
+  padding-top: 1rem;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 1.4rem;
+}
+
+.infoMerch{
+  font-family: 'DIN Condensed Web', roboto, sans;
+  display: inline-block;
+  color:#fff;
+  padding-top: 1rem;
+  justify-content: center;
+  letter-spacing: 2px;
+  font-size: 1.5rem;
+  border: 0.5px solid #838282;
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.sectionMerch{
+  padding: 5rem;
+  background: linear-gradient(to bottom, #242424 1%, #000 100%); 
+  /* background-color: #000; */
+  /* padding: 2rem 0; */
+}
