@@ -14,40 +14,31 @@
 
 }
 
-.material-container {
+.materialU-container {
   display: flex;
   flex-direction: column;
 }
 
-.material-container a {
+.materialU-container a {
   padding: 2rem;
   font-size: 20px;
-  color: #fff;
+  color: #840303;
   z-index: 1;
   text-decoration: none;
+}
+
+
+.carousel {
+  width: 100%;
+  max-width: 1000px;
+  margin: auto;
+  height: auto;
+
 }
 
 #imagemMaterial {
   width: 100%;
 }
-
-.detalheLinha {
-  margin: 0rem;
-  width: 100%;
-  max-width: 2900px;
-  color: #ffffff;
-  display: flex;
-}
-
-.materialTitulo {
-  font-size: 3rem;
-  font-family: "Din Condensed Web", sans-serif;
-  text-align: center;
-  letter-spacing: 2px;
-  padding: 0;
-  color: #fff;
-}
-
 
 .carousel-control-next,
 .carousel-control-prev {

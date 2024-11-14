@@ -1,15 +1,15 @@
 // import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import './css/material.css';
-import { Link } from 'react-router-dom';
+import './css/materialUnderfest.css';
 
-export function Material() {
+export function MaterialUnderfest() {
   return (
     <>
 
       <hr className='detalheLinha' />
-      <div className="material-container" id='carousel-container'>
+
+      <div className="materialU-container" id='carousel-container'>
         <div id="carouselExampleIndicators" className="carousel slide">
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -36,9 +36,6 @@ export function Material() {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <Link to={'/material'}>
-          <a> CLIQUE AQUI E CONFIRA OS NOSSOS CONTEÚDOS</a>
-        </Link>
       </div>
     </>
   );

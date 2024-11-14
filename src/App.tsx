@@ -14,7 +14,7 @@ function App() {
 
         <img src='/src/assets/images/underFont.png' className='logo-font' alt='Fonte Undercolin' />
       </div>
-      <Link to="https://linktr.ee/undercolin">
+      <Link target='_blank'  to="https://linktr.ee/undercolin">
         <div className="card">
           <img src='/src/assets/images/spotify.png' />
           <img src='/src/assets/images/youtube.png' />

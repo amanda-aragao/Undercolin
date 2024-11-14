@@ -18,8 +18,8 @@ export const MenuStyle = styled.section<MenuStyleProps>`
   display: flex;
   align-items: center;
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.5);
-  background: rgb(36,36,36);
-  background: linear-gradient(127deg, rgba(36,36,36,1) 0%, rgba(208,204,203,0.21445783132530116) 87%);
+  // background: rgb(36,36,36);
+  background: linear-gradient(137deg, rgba(36,36,36,1) 50%, rgba(208,204,203,0.21445783132530116) 175%);
   opacity: 0;
   pointer-events: none;
   transition: 0.5s;
