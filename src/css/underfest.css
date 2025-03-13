@@ -1,0 +1,115 @@
+.underfestContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+    url(../assets/images/underfest.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.selectUnderfest {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+
+  z-index: 1;
+
+
+}
+
+.detailLine {
+  margin: 1rem 0;
+  width: 100%;
+  max-width: 1900px;
+  color: #fff;
+  display: flex;
+
+}
+
+.titleUnderfest {
+  font-size: 3rem;
+  margin: 0;
+  font-family: "DIN Condensed Web", sans-serif;
+  letter-spacing: 2px;
+  color: #fff;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.titleBands {
+  font-size: 3rem;
+  /* margin: 0; */
+  font-family: "DIN Condensed Web", sans-serif;
+  letter-spacing: 2px;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  margin-top: 10rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.subTitle {
+  font-size: 1.5rem;
+  font-family: "DIN Condensed Web", sans-serif;
+  margin-top: 3rem;
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  justify-content: center;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  position: relative;
+  z-index: 3;
+
+}
+
+
+.textUnderfest {
+  position: relative;
+  font-family: "DIN Condensed Web", sans-serif;
+  margin: 0;
+  top: 7%;
+  left: 50%;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+  color: #fff;
+  padding: 0;
+  text-align: center;
+  z-index: 2;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.bands {
+  padding: 0 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+
+
+}
+
+
+.tituloFotos {
+  font-size: 2rem;
+  font-family: "DIN Condensed Web", sans-serif;
+  letter-spacing: 1px;
+  color: #fff;
+  position: relative;
+  z-index: 3;
+}
