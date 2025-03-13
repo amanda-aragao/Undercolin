@@ -1,4 +1,3 @@
-// import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './css/materialUnderfest.css';
@@ -7,9 +6,7 @@ export function MaterialUnderfest() {
   return (
     <>
 
-      <hr className='detalheLinha' />
-
-      <div className="materialU-container" id='carousel-container'>
+      <div className="materialU-container" id='carouselUnderfest-container'>
         <div id="carouselExampleIndicators" className="carousel slide">
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -18,13 +15,13 @@ export function MaterialUnderfest() {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="./src/assets/material/material2.jpg" className="d-block w-100" id='imagemMaterial' alt="Imagem referente a banda" />
+              <img src="./src/assets/material/material2.jpg" className="d-block w-100" id='imagemUnderfest' alt="Imagem referente as bandas do Underfest" />
             </div>
             <div className="carousel-item">
-              <img src="./src/assets/material/material3.jpg" className="d-block w-100" alt="Imagem referente a banda" />
+              <img src="./src/assets/images/underFont.png" className="d-block w-100" alt="Imagem referente as bandas do Underfest" />
             </div>
             <div className="carousel-item">
-              <img src="./src/assets/material/material1.jpg" className="d-block w-100" alt="Imagem referente a banda" />
+              <img src="./src/assets/material/material1.jpg" className="d-block w-100" alt="Imagem referente as bandas do Underfest" />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">

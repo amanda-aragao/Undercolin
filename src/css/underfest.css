@@ -4,11 +4,26 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background: linear-gradient(to bottom, #000 1%, #242424 100%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
+    url(../assets/images/underfest.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
+.selectUnderfest {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
 
-.detalheLinhaUnderfest {
+  z-index: 1;
+
+
+}
+
+.detailLine {
   margin: 1rem 0;
   width: 100%;
   max-width: 1900px;
@@ -17,70 +32,53 @@
 
 }
 
-.tituloUnderfest {
+.titleUnderfest {
   font-size: 3rem;
   margin: 0;
   font-family: "DIN Condensed Web", sans-serif;
   letter-spacing: 2px;
   color: #fff;
   display: flex;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
-.tituloBandas {
+.titleBands {
   font-size: 3rem;
-  margin: 0;
+  /* margin: 0; */
   font-family: "DIN Condensed Web", sans-serif;
   letter-spacing: 2px;
   color: #fff;
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem;
+  margin-top: 10rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.subtituloUnderfest {
+.subTitle {
   font-size: 1.5rem;
   font-family: "DIN Condensed Web", sans-serif;
-  margin-top: 5rem;
-  left: 20%;
-  width: 60%;
+  margin-top: 3rem;
   align-items: center;
   justify-items: center;
   justify-content: center;
   justify-content: center;
   color: rgb(255, 255, 255);
-  padding: 2rem;
   text-decoration: none;
   position: relative;
   z-index: 3;
 
 }
 
-.selectUnderfest {
-  position: relative;
-  background-size: cover;
-  height: 50rem;
-  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
-    url(../assets/images/underfest.jpg);
-  background-position: center;
-  width: 100%;
-
-}
-
-.selectUnderfest::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 1;
-
-}
 
 .textUnderfest {
   position: relative;
   font-family: "DIN Condensed Web", sans-serif;
   margin: 0;
-  top: 10%;
+  top: 7%;
   left: 50%;
   justify-content: center;
   align-items: center;
@@ -94,57 +92,21 @@
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.bandas {
-  display: flex;
-  flex-wrap: wrap;
+.bands {
+  padding: 0 5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
-  gap: 2rem;
   position: relative;
   z-index: 3;
 
 
 }
 
-.tituloBandas {
-  font-size: 3rem;
-  padding: 0;
-  margin-top: 2rem;
-  font-family: "DIN Condensed Web", sans-serif;
-  letter-spacing: 2px;
-  color: #fff;
-  position: relative;
-  z-index: 3;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 
-}
-
-/* .buttonUnderfest {
-  padding: 10px 20px;
-  display: inline-block;
-  margin: 0;
-  margin-top: 5rem;
-  font-size: 1.5rem;
-  font-family: "DIN Condensed Web";
-  font-weight: bold;
-  letter-spacing: 1px;
-  color: #fff; 
-  background-color: transparent; 
-  border: 1px solid #fff; 
-  text-decoration: none;
-  cursor: pointer;
-  position: relative;
-  z-index: 4; 
-} */
-
-/* .buttonUnderfest:hover {
-  background-color: rgba(255, 255, 255, 0.3); 
-} */
-
-.tituloFotos{
+.tituloFotos {
   font-size: 2rem;
-  padding: 0;
-  /* margin-top: 2rem; */
   font-family: "DIN Condensed Web", sans-serif;
   letter-spacing: 1px;
   color: #fff;

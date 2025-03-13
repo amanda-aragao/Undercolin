@@ -3,10 +3,14 @@
   width: 100%;
 }
 
+.carousel-inner {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  margin: auto
+}
 
 #carousel-container {
-  /* padding-top: 5rem; */
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +21,7 @@
 .material-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 .material-container a {
@@ -25,10 +30,13 @@
   color: #fff;
   z-index: 1;
   text-decoration: none;
+  position: relative;
 }
 
 #imagemMaterial {
   width: 100%;
+  height: 100%;
+  /* object-fit: contain; */
 }
 
 .detalheLinha {
@@ -39,17 +47,8 @@
   display: flex;
 }
 
-.materialTitulo {
-  font-size: 3rem;
-  font-family: "Din Condensed Web", sans-serif;
-  text-align: center;
-  letter-spacing: 2px;
-  padding: 0;
-  color: #fff;
-}
-
 
 .carousel-control-next,
 .carousel-control-prev {
-  width: 8%;
+  width: 5%;
 }

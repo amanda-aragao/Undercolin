@@ -1,5 +1,3 @@
-// import { css } from "styled-components"
-
 import { Link } from 'react-router-dom'
 import './css/underfest.css'
 import { MaterialUnderfest } from './MaterialUnderfest.tsx'
@@ -9,17 +7,17 @@ export function Underfest() {
   return (
     <>
       <div className='underfestContainer'>
-        <hr className='detalheLinhaUnderfest' />
-        <h2 className='tituloUnderfest'>UNDERFEST</h2>
-        <hr className='detalheLinhaUnderfest' />
+        <hr className='detailLine' />
+        <h2 className='titleUnderfest'>UNDERFEST</h2>
+        <hr className='detailLine' />
         <section className='selectUnderfest'>
           <h2 className='textUnderfest'>CONHEÇA NOSSO FESTIVAL COM O PROPÓSITO DE MOVIMENTAR AS BANDAS E COMÉRCIO LOCAIS
             O UNDERFEST ACONTECE UMA VEZ POR ANO NO MÊS DE SETEMBRO </h2>
-          <p className='subtituloUnderfest'>
+          <p className='subTitle'>
             ESSE ANO O UNDERFEST OCORREU NO MUCHA BREJA EM SANTOS COM A PRESENÇA DE 5 BANDAS DO HARDCORE, A CASA CONTA COM CERVEJA E LANCHES ARTESANAIS, CONFIRA ABAIXO A EDIÇÃO UNDERFEST 2024.
           </p>
-          <h2 className='tituloBandas'>BANDAS</h2>
-          <div className='bandas'>
+          <h2 className='titleBands'>BANDAS QUE PARTICIPANTES</h2>
+          <div className='bands'>
             <Link to='https://www.instagram.com/aphoyceh2core/' target='_blanck' >
               <img src='./src/assets/bandasUnderfest/Aphoyce.png' alt='bandaAphoyce' width={250} />
             </Link>
@@ -32,19 +30,24 @@ export function Underfest() {
             <Link to='https://www.instagram.com/undercolin_/' target='_blanck'>
               <img src='./src/assets/bandasUnderfest/undercolin.png' alt='bandaUnderColin' width={190} />
             </Link>
+            <Link to='https://www.instagram.com/undercolin_/' target='_blanck'>
+              <img src='./src/assets/bandasUnderfest/NEET.png' alt='bandaUnderColin' width={190} />
+            </Link>
+            <Link to='https://www.instagram.com/undercolin_/' target='_blanck'>
+              <img src='./src/assets/bandasUnderfest/rabujentus.png' alt='bandaUnderColin' width={300} />
+            </Link>
+            <Link to='https://www.instagram.com/undercolin_/' target='_blanck'>
+              <img src='./src/assets/bandasUnderfest/DDT.png' alt='bandaUnderColin' width={350} />
+            </Link>
+            <Link to='https://www.instagram.com/undercolin_/' target='_blanck'>
+              <img src='./src/assets/bandasUnderfest/EP.png' alt='bandaUnderColin' width={350} />
+            </Link>
           </div>
-            <p className='tituloFotos'> CONFIRA O QUE ROLOU NO UNDERFEST 2024 </p>
-            {/* <Link to="/underfest">
-              <button className='buttonUnderfest'>VER MAIS</button>
-            </Link> */}
-
-            <MaterialUnderfest />  
-
+          {/* <p className='tituloFotos'> UNDERFEST 2024 </p> */}
+          <section className='sectionUnderfestMaterial' id='material'>
+            <MaterialUnderfest />
+          </section>
         </section>
-
-
-
-
       </div>
     </>
   )

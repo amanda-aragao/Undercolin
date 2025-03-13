@@ -27,7 +27,7 @@ body {
   min-width: 320px;
   min-height: 100vh;
   background-color: #242424;
-
+  overflow: auto;
 }
 
 h1 {
@@ -47,8 +47,8 @@ button {
   transition: border-color 0.25s;
 }
 
-a{
-  color:#fff;
+a {
+  color: #fff;
 }
 
 

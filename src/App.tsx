@@ -8,13 +8,13 @@ function App() {
   return (
     <>
       <div className='logos'>
-        <Link to="/home">
+        <Link to="/home" className='logo-link'>
           <img src='/src/assets/images/underPassarinho.png' className='logo-passarinho' alt='Undercolin Banda' />
+          <img src='/src/assets/images/underFont.png' className='logo-font' alt='Fonte Undercolin' />
         </Link>
 
-        <img src='/src/assets/images/underFont.png' className='logo-font' alt='Fonte Undercolin' />
       </div>
-      <Link target='_blank'  to="https://linktr.ee/undercolin">
+      <Link target='_blank' to="https://linktr.ee/undercolin">
         <div className="card">
           <img src='/src/assets/images/spotify.png' />
           <img src='/src/assets/images/youtube.png' />
@@ -22,9 +22,7 @@ function App() {
           <img src='/src/assets/images/instagram.png' className='instagram' />
         </div>
       </Link>
-      <p className="planoA">
-        Clique aqui para conhecer nosso som!
-      </p>
+      <p className='planoA'>Clique aqui para conhecer nosso som!</p>
     </>
   )
 }

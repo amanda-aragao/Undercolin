@@ -20,7 +20,7 @@ export function Home({ menuIsVisible, setMenuIsVisible }: HomeProps) {
         <Link to="/merch" className='lojaSection'>
           <img src="./src/assets/images/merch.png" alt="Descrição da imagem" style={{ cursor: 'pointer' }} />
         </Link>
-        <section className='sectionMaterial' id='material'>
+        <section className='sectionMaterial'>
           <Material />
         </section>
         <Underfest />
