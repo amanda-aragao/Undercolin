@@ -16,10 +16,8 @@ function Main() {
         <Route path="/" element={<App />} />
         <Route path="/home" element={<Home menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />} />
         <Route path="/historia" element={<Historia menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />} />
-        <Route path="/material" element={<Material menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />} />
+        <Route path="/material" element={<Material />} />
         <Route path="/merch" element={<Merch menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />} />
-
-        {/* Outras rotas */}
       </Routes>
     </Router>
   );
