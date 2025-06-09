@@ -30,7 +30,7 @@ export function Nav({ menuIsVisible, setMenuIsVisible }: MenuProps) {
             <a className='topicNav' href="/historia">HISTÓRIA</a>
             <a className='topicNav'>CONTATO</a>
             <RouterLink to="/home" className='linkNav'>
-              <img src='/src/assets/images/underFont.png' alt='Undercolin Fonte' className='underNav' />
+              <img src='/images/underFont.png' alt='Undercolin Fonte' className='underNav' />
             </RouterLink>
             <a className='topicNav' onClick={() => scrollToSection('material')}>MATERIAL</a>
 

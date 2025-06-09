@@ -18,7 +18,7 @@ export function Home({ menuIsVisible, setMenuIsVisible }: HomeProps) {
           <Agenda />
         </section>
         <Link to="/merch" className='lojaSection'>
-          <img src="./src/assets/images/merch.png" alt="Descrição da imagem" style={{ cursor: 'pointer' }} />
+          <img src="/images/merch.png" alt="Descrição da imagem" style={{ cursor: 'pointer' }} />
         </Link>
         <section className='sectionMaterial'>
           <Material />
