@@ -18,13 +18,13 @@
   /* max-width: 90%;  */
 }
 
+
 .logo-passarinho {
   position: absolute;
   margin-bottom: 5%;
-  margin-left: 62%;
+  margin-left: 65%;
   display: flex;
-  width: 50%;
-  max-width: 350px;
+  max-width: 400px;
   height: auto;
   animation: moveUpDown 2s infinite alternate ease-in-out;
 }
@@ -58,6 +58,11 @@
   margin-top: 25rem;
   width: 80%;
   max-width: 1700px;
+  overlay: hidden;
+}
+
+.logo-font {
+  filter: drop-shadow(4px 4px 0.2em rgba(170, 167, 163, 0.7));
 }
 
 
@@ -87,16 +92,6 @@
   transform: scale(1.1);
 }
 
-.planoA {
-  text-decoration: none;
-  font-size: 1.2rem;
-  color: #d0cccb;
-  font-family: 'Bernard MT Condensed', roboto, sans-serif;
-  font-weight: bold;
-  margin-top: 1rem;
-  text-align: center;
-}
-
 @media (min-width: 768px) {
   .logo-passarinho {
     height: 27em;
@@ -107,9 +102,37 @@
     flex-direction: row;
   }
 
-  .planoA {
+  .description {
     font-size: 1.5rem;
+    color: white;
   }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.cta-button {
+  background-color: #252525;
+  color: #f8eed4;
+  font-family: roboto, sans-serif;
+  padding: 0.40rem 1em;
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px rgba(228, 222, 215, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+  background-color: #d18213;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(247, 148, 29, 0.5);
 }
 
 @keyframes logo-spin {

@@ -6,17 +6,17 @@ export function Underfest() {
 
   return (
     <>
-      <div className='underfestContainer'>
+      <div className='underfestContainer' id='materialUnderfest'>
         <hr className='detailLine' />
         <h2 className='titleUnderfest'>UNDERFEST</h2>
         <hr className='detailLine' />
         <section className='selectUnderfest'>
           <h2 className='textUnderfest'>CONHEÇA NOSSO FESTIVAL COM O PROPÓSITO DE MOVIMENTAR AS BANDAS E COMÉRCIO LOCAIS
-            O UNDERFEST ACONTECE UMA VEZ POR ANO NO MÊS DE SETEMBRO </h2>
+          </h2>
           <p className='subTitle'>
-            ESSE ANO O UNDERFEST OCORREU NO MUCHA BREJA EM SANTOS COM A PRESENÇA DE 5 BANDAS DO HARDCORE, A CASA CONTA COM CERVEJA E LANCHES ARTESANAIS, CONFIRA ABAIXO A EDIÇÃO UNDERFEST 2024.
-          </p>
-          <h2 className='titleBands'>BANDAS QUE PARTICIPANTES</h2>
+            O UNDERFEST É UM FESTIVAL ORGANIZADO ANUALMENTE PELA BANDA UNDERCOLIN DE FORMA 100% INDEPENDENTE. <br />
+            O EVENTO REÚNE BANDAS E ARTISTAS DA CENA ALTERNATIVA, PROPORCIONANDO UM ESPAÇO PARA NOVAS E JÁ CONSOLIDADAS BANDAS SE APRESENTAREM. </p>
+          <h3 className='titleBands'>BANDAS QUE PARTICIPANTES</h3>
           <div className='bands'>
             <Link to='https://www.instagram.com/aphoyceh2core/' target='_blanck' >
               <img src='./src/assets/bandasUnderfest/Aphoyce.png' alt='bandaAphoyce' width={250} />
@@ -44,7 +44,7 @@ export function Underfest() {
             </Link>
           </div>
           {/* <p className='tituloFotos'> UNDERFEST 2024 </p> */}
-          <section className='sectionUnderfestMaterial' id='material'>
+          <section className='sectionUnderfestMaterial'>
             <MaterialUnderfest />
           </section>
         </section>
