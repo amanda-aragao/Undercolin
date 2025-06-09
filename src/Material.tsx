@@ -36,7 +36,7 @@ export function Material() {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <Link to={'/material'}>
+        <Link to={'/material'} className='linkMaterial'>
           <a> CLIQUE AQUI E CONFIRA OS NOSSOS CONTEÚDOS</a>
         </Link>
       </div>

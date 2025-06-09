@@ -1,7 +1,8 @@
 
 import { MenuStyle } from '../src/css/MenuStyle';
-import {IoClose} from 'react-icons/io5';
+import { IoClose } from 'react-icons/io5';
 import PropTypes from 'prop-types';
+
 
 
 interface MenuProps {
@@ -19,16 +20,16 @@ export function Menu({ menuIsVisible, setMenuIsVisible }: MenuProps) {
   return (<>
 
     <MenuStyle isVisible={menuIsVisible}>
-        <IoClose size={25} onClick={() => setMenuIsVisible(false)} />
+      <IoClose size={25} onClick={() => setMenuIsVisible(false)} />
 
-        <aside>
-          <a className='topicosMenu' href="/historia">HISTÓRIA</a>
-          <a className='topicosMenu' onClick={() => scrollToSection('agenda')}>AGENDA</a>
-          <a className='topicosMenu' href="/contato">CONTATO</a>
-          <a className='topicosMenu' href="/material">MATERIAL</a>
-          <a className='topicosMenu' href="/loja">LOJINHA</a>
-          <a className='topicosMenu' href="/underfest">UNDERFEST</a>
-        </aside>
+      <aside>
+        <a className='topicosMenu' href="/historia">HISTÓRIA</a>
+        <a className='topicosMenu' href='/home'>AGENDA</a>
+        <a className='topicosMenu' href="/contato">CONTATO</a>
+        <a className='topicosMenu' onClick={() => scrollToSection('-')}>MATERIAL</a>
+        <a className='topicosMenu' href="/merch">LOJINHA</a>
+        <a className='topicosMenu' href="/underfest">UNDERFEST</a>
+      </aside>
 
     </MenuStyle>
   </>

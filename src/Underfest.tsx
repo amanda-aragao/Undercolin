@@ -6,7 +6,7 @@ export function Underfest() {
 
   return (
     <>
-      <div className='underfestContainer'>
+      <div className='underfestContainer' id='materialUnderfest'>
         <hr className='detailLine' />
         <h2 className='titleUnderfest'>UNDERFEST</h2>
         <hr className='detailLine' />
@@ -44,7 +44,7 @@ export function Underfest() {
             </Link>
           </div>
           {/* <p className='tituloFotos'> UNDERFEST 2024 </p> */}
-          <section className='sectionUnderfestMaterial' id='material'>
+          <section className='sectionUnderfestMaterial'>
             <MaterialUnderfest />
           </section>
         </section>

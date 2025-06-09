@@ -22,10 +22,9 @@
 .logo-passarinho {
   position: absolute;
   margin-bottom: 5%;
-  margin-left: 62%;
+  margin-left: 65%;
   display: flex;
-  width: 50%;
-  max-width: 350px;
+  max-width: 400px;
   height: auto;
   animation: moveUpDown 2s infinite alternate ease-in-out;
 }
