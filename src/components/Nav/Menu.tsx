@@ -1,5 +1,5 @@
 
-import { MenuStyle } from '../src/css/MenuStyle';
+import { MenuStyle } from './MenuStyle';
 import { IoClose } from 'react-icons/io5';
 import PropTypes from 'prop-types';
 

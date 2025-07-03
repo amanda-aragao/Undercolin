@@ -1,6 +1,6 @@
-import './css/agenda.css';
+import './Schedule.css';
 
-export function Agenda() {
+export function Schedule() {
   return (
     <section className="agendaSection">
       <h1 className='tituloAgenda'>AGENDA</h1>
