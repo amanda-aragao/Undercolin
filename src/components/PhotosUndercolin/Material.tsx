@@ -1,7 +1,10 @@
 // import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import './css/material.css';
+import './Material.css';
+import foto1 from '../../assets/material/material1.jpg';
+import foto2 from '../../assets/material/material2.jpg';
+import foto3 from '../../assets/material/material3.jpg';
 import { Link } from 'react-router-dom';
 
 export function Material() {
@@ -18,13 +21,13 @@ export function Material() {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="./src/assets/material/material2.jpg" className="d-block w-100" id='imagemMaterial' alt="Imagem referente a banda" />
+              <img src={foto2} className="d-block w-100" id='imagemMaterial' alt="Imagem referente a banda" />
             </div>
             <div className="carousel-item">
-              <img src="./src/assets/material/material3.jpg" className="d-block w-100" alt="Imagem referente a banda" />
+              <img src={foto3} className="d-block w-100" alt="Imagem referente a banda" />
             </div>
             <div className="carousel-item">
-              <img src="./src/assets/material/material1.jpg" className="d-block w-100" alt="Imagem referente a banda" />
+              <img src={foto1} className="d-block w-100" alt="Imagem referente a banda" />
             </div>
           </div>
           <button className="carousel-control-prev" type="button" data-bs-target="#carouselUndercolin" data-bs-slide="prev">
@@ -36,7 +39,7 @@ export function Material() {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <Link to={'/material'} className='linkMaterial'>
+        <Link to="https://linktr.ee/undercolin" className='linkMaterial'>
           <a> CLIQUE AQUI E CONFIRA OS NOSSOS CONTEÚDOS</a>
         </Link>
       </div>

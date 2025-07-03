@@ -70,7 +70,6 @@
 
 }
 
-
 .textUnderfest {
   font-family: "DIN Condensed Web", sans-serif;
   font-size: 1.7rem;
@@ -96,16 +95,6 @@
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
-  position: relative;
-  z-index: 3;
-}
-
-
-.tituloFotos {
-  font-size: 2rem;
-  font-family: "DIN Condensed Web", sans-serif;
-  letter-spacing: 1px;
-  color: #fff;
   position: relative;
   z-index: 3;
 }

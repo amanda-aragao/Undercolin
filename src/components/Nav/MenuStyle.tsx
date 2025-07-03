@@ -5,10 +5,10 @@ interface MenuStyleProps {
 }
 
 export const MenuStyle = styled.section<MenuStyleProps>`
-  display: ${props => (props.isVisible ? 'block' : 'none')};
+  // display: ${props => (props.isVisible ? 'block' : 'none')};
   position: fixed;
   display: flex;
-  width: 80%;
+  width: 100%;
   max-width: 20rem;
   height: 100vh;
   z-index: 10;
@@ -79,10 +79,4 @@ export const MenuStyle = styled.section<MenuStyleProps>`
       transform: translateY(0);
     `}
 
-  // @media (min-width: 768px) {
-  //   width: 25%;
-  //   svg {
-  //     left: 4.2rem;
-  //   }
-  // }
 `;

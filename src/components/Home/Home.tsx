@@ -1,9 +1,10 @@
-import { Agenda } from './Agenda.tsx';
-import './css/merchHome.css';
-import { Material } from './Material.tsx';
-import { Nav } from './Nav.tsx';
-import { Underfest } from './Underfest.tsx';
+import { Schedule } from '../Schedule/Schedule.tsx';
+import '../Merch/merchHome.css';
+import { Material } from '../PhotosUndercolin/Material.tsx';
+import { Nav } from '../Nav/Nav.tsx';
+import { Underfest } from '../Underfest/Underfest.tsx';
 import { Link } from 'react-router-dom';
+import store from '../../assets/merch/STORE.png'
 
 interface HomeProps {
   menuIsVisible: boolean;
@@ -15,10 +16,10 @@ export function Home({ menuIsVisible, setMenuIsVisible }: HomeProps) {
       <Nav menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />
       <div className="homeContainer">
         <section id="agenda" className='sectionAgenda'>
-          <Agenda />
+          <Schedule />
         </section>
         <Link to="/merch" className='lojaSection'>
-          <img src="/images/merch.png" alt="Descrição da imagem" style={{ cursor: 'pointer' }} />
+          <img src={store} alt="Descrição da imagem" style={{ cursor: 'pointer' }} />
         </Link>
         <section className='sectionMaterial'>
           <Material />

@@ -7,6 +7,8 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: block;
+  width: 100%;
 }
 
 @font-face {
@@ -19,15 +21,14 @@
   src: url('/src/fontes/DIN Condensed Web.ttf') format('truetype');
 }
 
-
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
   background-color: #242424;
-  overflow: auto;
+  overflow: hidden;
+  width: 100%;
+  min-height: 100vh;
+
 }
 
 h1 {

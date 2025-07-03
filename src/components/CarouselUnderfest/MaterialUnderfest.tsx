@@ -1,6 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
-import './css/materialUnderfest.css';
+import './MaterialUnderfest.css';
 
 export function MaterialUnderfest() {
   return (

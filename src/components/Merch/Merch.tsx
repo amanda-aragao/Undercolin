@@ -1,5 +1,5 @@
-import './css/merch.css';
-import { Nav } from './Nav.tsx';
+import './Merch.css';
+import { Nav } from '../Nav/Nav.tsx';
 
 interface MerchProps {
   menuIsVisible: boolean;

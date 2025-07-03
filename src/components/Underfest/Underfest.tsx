@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
-import './css/underfest.css'
-import { MaterialUnderfest } from './MaterialUnderfest.tsx'
+import './Underfest.css'
+import { MaterialUnderfest } from '../CarouselUnderfest/MaterialUnderfest.tsx'
 
 export function Underfest() {
 
@@ -43,7 +43,7 @@ export function Underfest() {
               <img src='./src/assets/bandasUnderfest/EP.png' alt='bandaUnderColin' width={350} />
             </Link>
           </div>
-          {/* <p className='tituloFotos'> UNDERFEST 2024 </p> */}
+
           <section className='sectionUnderfestMaterial'>
             <MaterialUnderfest />
           </section>
