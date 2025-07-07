@@ -8,28 +8,47 @@ export const HomeStyle = styled.div`
 
 
   .header {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
     height: 7rem;
-    position: relative;
     padding: 0 1rem;
+    position: relative;
     box-sizing: border-box;
   }
+
+  .header-content {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* ou center + gap */
+  gap: 3rem;
+}
+
 
   .menuLeft,
   .menuRight {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.2rem;
     align-items: center;
+    min-width: 20%;
+    justify-content: center;
+}
+
+.logoContainer {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
   .topicNav {
-    padding: 0px 10px;
-    // display: inline-block; 
-    // margin: 0;
-    // margin-top: 1rem;
+    padding: 0px 15px;
     font-family: "DIN Condensed Web";
     font-size: 1.5rem;
     font-weight: bold; 
@@ -73,15 +92,21 @@ export const HomeStyle = styled.div`
     display: none;
     color: #fff;
     cursor: pointer;
-    /* position: absolute; */
-    /* right: 1rem; */
-    /* top: 50%; */
-    /* transform: translateY(-50%); */
-    /* cursor: pointer; */
-
   }
 
   // RESPONSIVO
+    @media (max-width: 1024px) {
+    .menuLeft,
+    .menuRight {
+      gap: 0.5rem;
+    }
+    .underNav {
+      width: 20rem;
+    }
+    .topicNav {
+      font-size: 1.2rem; 
+    }
+  }
 
   @media (max-width: 768px) {
     .menuLeft,
@@ -90,46 +115,98 @@ export const HomeStyle = styled.div`
     }
     .underNav {
       width: 25rem;
+      margin-left: 2%;
+ 
     }
     .mobile {
       display: block; 
+      position: absolute;
+      top: 2.5rem;
+      left: 42rem;
+      width: 2rem;
     }
-  }
-  @media (max-width: 480px) {
-    .header {
-      padding: 0 0.5rem; /* Reduz o padding em telas menores */
-    }
-    .topicNav {
-      font-size: 1.2rem; /* Reduz o tamanho da fonte em telas menores */
-    }
-    .underNav {
-      width: 10rem; /* Ajusta a largura da imagem em telas menores */
-    }
-    // .mobile {
-    //   left: 70rem; /* Ajusta a posição do ícone de menu em telas menores */
-    // }
   }
 
-    @media (max-width: 360px) {
+  @media (max-width: 690px) {
+    .menuLeft,
+    .menuRight {
+      display: none;
+    }
+    .underNav {
+      width: 25rem;
+      margin-left: 10%;
+    }
+    .mobile {
+      display: block; 
+      position: absolute;
+      top: 2.5rem;
+      left: 45rem;
+      width: 2rem;
+
+    }
+  }
+
+  @media (max-width: 414px) {
     .header {
-      // padding: 0 0.5rem; /* Reduz ainda mais o padding em telas muito pequenas */
+      padding: 0 0.5rem;  
+    }
+    .topicNav {
+      font-size: 1.2rem; 
+    }
+    .underNav {
+      width: 15rem; 
+      margin-left: 0.5%;
+    }
+    .mobile {
+      position: absolute;
+      left: 22rem;
+      top: 2.5rem;
+      width: 2rem;
+
+    }
+  }
+  
+    @media (max-width: 430px) {
+    .header {
+      padding: 0 0.5rem;  
+    }
+    .topicNav {
+      font-size: 1.2rem; 
+    }
+    .underNav {
+      width: 15rem; 
+      margin-left: 0.5%;
+    }
+    .mobile {
+      position: absolute;
+      left: 22rem;
+      top: 2.5rem;
+      width: 2rem;
+    }
+  }
+    @media (max-width: 375px) {
+    .header {
       width: 100%;
       }
     .underNav {
-      width: 10rem; 
+      width: 15rem; 
+      margin-left: 10%
     }
     .mobile {
-      left: 20rem; 
-      width: 1.5rem; 
+      position: absolute;
+      left: 22rem;
+      top: 2.5rem;
     }
   }
     @media (max-width: 320px) {
     .underNav {
-      width: 8rem;
+      width: 25rem;
+      margin-left: 50%
     }
-
     .mobile {
-      right: 0.5rem;
+      position: absolute;
+      top: 2.5rem;
+      left: 40rem;
     }
 
 }

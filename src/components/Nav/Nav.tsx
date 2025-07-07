@@ -22,27 +22,31 @@ export function Nav({ menuIsVisible, setMenuIsVisible }: MenuProps) {
     <>
       <HomeStyle>
         <header className='header'>
-          <div className="menuLeft">
-            <a className='topicNav' href="/home">AGENDA</a>
-            <a className='topicNav' href="/historia">HISTÓRIA</a>
-            <a className='topicNav'>CONTATO</a>
-          </div>
+          <div className="header-content">
 
-          <RouterLink to="/home" className='linkNav'>
-            <img src={underFont} alt='Undercolin Fonte' className='underNav' />
-          </RouterLink>
+            <div className="menuLeft">
+              <a className='topicNav' href="/home">AGENDA</a>
+              <a className='topicNav' href="/historia">HISTÓRIA</a>
+              <a className='topicNav'>CONTATO</a>
+            </div>
+            <div className="logoContainer">
+              <RouterLink to="/home" className='linkNav'>
+                <img src={underFont} alt='Undercolin Fonte' className='underNav' />
+              </RouterLink>
+            </div>
 
-          <div className="menuRight">
-            <a className='topicNav' onClick={() => scrollToSection('material')}>MATERIAL</a>
-            <a className='topicNav' href='/merch'>MERCH</a>
-            <a className='topicNav' onClick={() => scrollToSection('materialUnderfest')}>UNDERFEST</a>
+            <div className="menuRight">
+              <a className='topicNav' onClick={() => scrollToSection('material')}>MATERIAL</a>
+              <a className='topicNav' href='/merch'>MERCH</a>
+              <a className='topicNav' onClick={() => scrollToSection('materialUnderfest')}>UNDERFEST</a>
+            </div>
           </div>
-          <IoIosMenu onClick={() => setMenuIsVisible(true)} className="mobile" size={35} />
-          <Menu
-            menuIsVisible={menuIsVisible}
-            setMenuIsVisible={setMenuIsVisible}
-          />
         </header>
+        <IoIosMenu onClick={() => setMenuIsVisible(true)} className="mobile" size={35} />
+        <Menu
+          menuIsVisible={menuIsVisible}
+          setMenuIsVisible={setMenuIsVisible}
+        />
       </HomeStyle >
     </>
   );

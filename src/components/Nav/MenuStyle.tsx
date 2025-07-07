@@ -8,12 +8,11 @@ export const MenuStyle = styled.section<MenuStyleProps>`
   // display: ${props => (props.isVisible ? 'block' : 'none')};
   position: fixed;
   display: flex;
-  width: 100%;
+  width: 20%;
   max-width: 20rem;
   height: 100vh;
   z-index: 10;
-  border-top-left-radius: 20px; 
-  border-bottom-left-radius: 20px; 
+  border-radius: 20px; 
   top: 0;
   right: 0;
   bottom: 0;
@@ -27,12 +26,12 @@ export const MenuStyle = styled.section<MenuStyleProps>`
 
   svg {
     position: absolute;
-    top: 2rem;
+    top: 1rem;
     color: #fff;
     transform: rotate(45deg);
     transition: 0.7s;
-    width: 8rem;
-    height: 2.5rem;
+    width: 5rem;
+    height: 2rem;
   }
 
   aside {
@@ -45,7 +44,7 @@ export const MenuStyle = styled.section<MenuStyleProps>`
     margin-top: 2rem;
     margin-left: 0.5rem;
     background-color: transparent;
-    gap: 6rem;
+    gap: 2.5rem;
   }
 
   .topicosMenu {
@@ -53,8 +52,8 @@ export const MenuStyle = styled.section<MenuStyleProps>`
     font-weight: bold;
     border-radius: 10px;
     border: 1px solid #fff;
-    padding: 2rem;
-    width: 20rem;
+    padding: 0.5rem;
+    width: 15rem;
     font-size: 2rem;
     letter-spacing: 1.5px;
     color: #fff;
@@ -79,4 +78,23 @@ export const MenuStyle = styled.section<MenuStyleProps>`
       transform: translateY(0);
     `}
 
+  @media (max-width: 1024px){
+    width: 25%;
+    max-width: 25%;
+    /* height: 100vh; */
+    position: fixed;
+    top: 2px;
+    right: 2px;;
+    /* bottom: 0; */
+    /* left: 0; */
+    z-index: 10;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: rgba(36,36,36,0.9);
+  }
+  @media (max-width: 768px) {}
+  @media (max-width: 690px) {}
+  @media (max-width: 414px) {}
+  @media (max-width: 375px) {}
+  @media (max-width: 320px) {}
 `;
