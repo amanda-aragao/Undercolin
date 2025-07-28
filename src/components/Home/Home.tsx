@@ -15,15 +15,15 @@ export function Home({ menuIsVisible, setMenuIsVisible }: HomeProps) {
     <>
       <Nav menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />
       <div className="homeContainer">
-        <section id="agenda" className='sectionAgenda'>
-          <Schedule />
-        </section>
+        <Schedule />
         <Link to="/merch" className='lojaSection'>
           <img src={store} alt="Descrição da imagem" style={{ cursor: 'pointer' }} />
         </Link>
+
         <section className='sectionMaterial'>
           <Material />
         </section>
+
         <Underfest />
       </div>
     </>

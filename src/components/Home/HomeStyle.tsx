@@ -1,11 +1,18 @@
 import styled from 'styled-components';
 
 export const HomeStyle = styled.div`
-  width: 100%;
-  background-color:  rgb(30, 31, 36);
-  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
-  z-index: 100; 
 
+  .homeContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(30, 31, 36);
+  padding: 2rem 1rem;
+  gap: 2rem; /* espaçamento entre os componentes */
+}
 
   .header {
     display: flex;
@@ -185,8 +192,9 @@ export const HomeStyle = styled.div`
     }
   }
     @media (max-width: 375px) {
-    .header {
-      width: 100%;
+      .homeContainer{
+        max-width: 100%;
+        display: flex;
       }
     .underNav {
       width: 15rem; 
@@ -199,6 +207,7 @@ export const HomeStyle = styled.div`
     }
   }
     @media (max-width: 320px) {
+
     .underNav {
       width: 25rem;
       margin-left: 50%
