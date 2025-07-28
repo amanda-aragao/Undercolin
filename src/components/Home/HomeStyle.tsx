@@ -2,39 +2,25 @@ import styled from 'styled-components';
 
 export const HomeStyle = styled.div`
 
-  .homeContainer {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: rgb(30, 31, 36);
-  padding: 2rem 1rem;
-  gap: 2rem; /* espaçamento entre os componentes */
-}
-
   .header {
     display: flex;
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    height: 7rem;
-    padding: 0 1rem;
+    height: 5rem;
     position: relative;
     box-sizing: border-box;
+    background-color: rgb(30, 31, 36);
   }
 
-  .header-content {
+  .headerContent {
   width: 100%;
   max-width: 1024px;
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between; /* ou center + gap */
-  gap: 3rem;
+  justify-content: center; 
 }
-
 
   .menuLeft,
   .menuRight {
@@ -45,19 +31,10 @@ export const HomeStyle = styled.div`
     justify-content: center;
 }
 
-.logoContainer {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  padding: 0 2rem;
-}
-
   .topicNav {
-    padding: 0px 15px;
+    padding: 0px 25px;
     font-family: "DIN Condensed Web";
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold; 
     letter-spacing: 1px;
     text-decoration: none; 
@@ -76,7 +53,7 @@ export const HomeStyle = styled.div`
   }
     
   .underNav {
-    width: 25rem;
+    width: 20rem;
     height: auto;
     margin: 0 auto;
     padding: 1rem;
@@ -91,7 +68,7 @@ export const HomeStyle = styled.div`
   }
         
   .topicNav:hover {
-    filter: drop-shadow(0 0 0.5em rgba(255, 255, 255, 0.7));
+    filter: drop-shadow(0 0 0.3em rgba(255, 255, 255, 0.7));
     transform: scale(1.1);
   }
   
@@ -187,8 +164,7 @@ export const HomeStyle = styled.div`
     .mobile {
       position: absolute;
       left: 22rem;
-      top: 2.5rem;
-      width: 2rem;
+      top: 1.5rem;
     }
   }
     @media (max-width: 375px) {
@@ -203,20 +179,8 @@ export const HomeStyle = styled.div`
     .mobile {
       position: absolute;
       left: 22rem;
-      top: 2.5rem;
+      top: 1.5rem;
     }
   }
-    @media (max-width: 320px) {
 
-    .underNav {
-      width: 25rem;
-      margin-left: 50%
-    }
-    .mobile {
-      position: absolute;
-      top: 2.5rem;
-      left: 40rem;
-    }
-
-}
 `;

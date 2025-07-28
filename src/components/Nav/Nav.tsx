@@ -22,7 +22,7 @@ export function Nav({ menuIsVisible, setMenuIsVisible }: MenuProps) {
     <>
       <HomeStyle>
         <header className='header'>
-          <div className="header-content">
+          <div className="headerContent">
 
             <div className="menuLeft">
               <a className='topicNav' href="/home">AGENDA</a>

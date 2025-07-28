@@ -16,7 +16,7 @@ export function Home({ menuIsVisible, setMenuIsVisible }: HomeProps) {
       <Nav menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />
       <div className="homeContainer">
         <Schedule />
-        <Link to="/merch" className='lojaSection'>
+        <Link to="/merch" className='storeSection'>
           <img src={store} alt="Descrição da imagem" style={{ cursor: 'pointer' }} />
         </Link>
 
