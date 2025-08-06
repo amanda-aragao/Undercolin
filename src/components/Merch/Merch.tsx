@@ -21,7 +21,7 @@ export function Merch({ menuIsVisible, setMenuIsVisible }: MerchProps) {
             <h3 className='precoCamisa'>R$ 70,00</h3>
           </div>
           <div className='grid-item'>
-            <img src='/src/assets/merch/STORE.png' className='grid-image' />
+            <img src='/src/assets/merch/4.png' className='grid-image' />
             <h1 className='tituloCamisa'>T-SHIRT PRETA GUARÁ VERMELHO </h1>
             <h3 className='precoCamisa'>R$ 70,00</h3>
           </div>
