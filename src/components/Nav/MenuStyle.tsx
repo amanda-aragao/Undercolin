@@ -78,20 +78,20 @@ export const MenuStyle = styled.section<MenuStyleProps>`
       transform: translateY(0);
     `}
 
-  @media (max-width: 1024px){
-    width: 25%;
-    max-width: 25%;
+  /* @media (max-width: 1024px){ */
+    /* width: 25%; */
+    /* max-width: 25%; */
     /* height: 100vh; */
-    position: fixed;
-    top: 2px;
-    right: 2px;;
+    /* position: fixed; */
+    /* top: 2px; */
+    /* right: 2px;; */
     /* bottom: 0; */
     /* left: 0; */
-    z-index: 10;
-    border-radius: 0;
-    box-shadow: none;
-    background-color: rgba(36,36,36,0.9);
-  }
+    /* z-index: 10; */
+    /* border-radius: 0; */
+    /* box-shadow: none; */
+    /* background-color: rgba(36,36,36,0.9); */
+  /* } */
   @media (max-width: 768px) {}
   @media (max-width: 690px) {}
   @media (max-width: 414px) {}

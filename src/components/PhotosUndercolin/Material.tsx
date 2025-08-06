@@ -11,8 +11,8 @@ export function Material() {
   return (
     <>
 
-      <hr className='detalheLinha' />
-      <div className="material-container" id='carousel-container'>
+      <hr className='detailLine' />
+      <div className="materialContainer" id='carousel-container'>
         <div id="carouselUndercolin" className="carousel slide">
           <div className="carousel-indicators">
             <button type="button" data-bs-target="#carouselUndercolin" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>

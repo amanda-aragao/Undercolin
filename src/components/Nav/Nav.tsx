@@ -24,10 +24,10 @@ export function Nav({ menuIsVisible, setMenuIsVisible }: MenuProps) {
         <header className='header'>
           <div className="headerContent">
 
-            <div className="menuLeft">
-              <a className='topicNav' href="/home">AGENDA</a>
-              <a className='topicNav' href="/historia">HISTÓRIA</a>
-              <a className='topicNav'>CONTATO</a>
+            <div className="navSectionLeft">
+              <a className='navLink' href="/home">AGENDA</a>
+              <a className='navLink' href="/historia">HISTÓRIA</a>
+              <a className='navLink'>CONTATO</a>
             </div>
             <div className="logoContainer">
               <RouterLink to="/home" className='linkNav'>
@@ -35,14 +35,18 @@ export function Nav({ menuIsVisible, setMenuIsVisible }: MenuProps) {
               </RouterLink>
             </div>
 
-            <div className="menuRight">
-              <a className='topicNav' onClick={() => scrollToSection('material')}>MATERIAL</a>
-              <a className='topicNav' href='/merch'>MERCH</a>
-              <a className='topicNav' onClick={() => scrollToSection('materialUnderfest')}>UNDERFEST</a>
+            <div className="navSectionRight">
+              <a className='navLink' onClick={() => scrollToSection('material')}>MATERIAL</a>
+              <a className='navLink' href='/merch'>MERCH</a>
+              <a className='navLink' onClick={() => scrollToSection('materialUnderfest')}>UNDERFEST</a>
             </div>
           </div>
         </header>
-        <IoIosMenu onClick={() => setMenuIsVisible(true)} className="mobile" size={35} />
+        <IoIosMenu onClick={() => setMenuIsVisible(true)}
+          className="menuToggleIcon"
+          size={35}
+          aria-label="Abrir menu"
+          role="button" />
         <Menu
           menuIsVisible={menuIsVisible}
           setMenuIsVisible={setMenuIsVisible}

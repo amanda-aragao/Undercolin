@@ -2,11 +2,31 @@
   width: 100%;
   display: block;
   margin-top: 8rem;
-  /* margin-bottom: 8rem; */
+  margin-bottom: 5rem;
   background-color: #242424;
 }
 
 
 img {
-  width: 60%;
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .storeSection {
+    margin-top: 6rem;
+  }
+
+  img {
+    width: 80%;
+  }
+}
+
+@media (max-width: 430px) {
+  .storeSection {
+    margin-top: 4rem;
+  }
+
+  img {
+    width: 75%;
+  }
 }

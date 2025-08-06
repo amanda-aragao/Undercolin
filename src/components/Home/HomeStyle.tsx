@@ -8,30 +8,30 @@ export const HomeStyle = styled.div`
     justify-content: space-between;
     align-items: center;
     height: 5rem;
+    background-color: rgb(30, 31, 36);
     position: relative;
     box-sizing: border-box;
-    background-color: rgb(30, 31, 36);
+    padding: 0 1rem; // Ajuste de padding para evitar overflow
+
   }
 
   .headerContent {
-  width: 100%;
-  max-width: 1024px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
-  justify-content: center; 
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
 }
 
-  .menuLeft,
-  .menuRight {
+  .navSectionLeft,
+  .navSectionRight {
     display: flex;
     gap: 1.2rem;
     align-items: center;
-    min-width: 20%;
-    justify-content: center;
 }
 
-  .topicNav {
+  .navLink {
     padding: 0px 25px;
     font-family: "DIN Condensed Web";
     font-size: 1rem;
@@ -46,12 +46,13 @@ export const HomeStyle = styled.div`
       0.5px  0.5px 0 grey;
     transition: transform 0.3s;
   }
-  
-  a:hover {
-    filter: drop-shadow(0 0 0.5em rgba(255, 255, 255, 0.7));
-    transform: scale(1.1);
+
+  .logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
   }
-    
   .underNav {
     width: 20rem;
     height: auto;
@@ -61,125 +62,83 @@ export const HomeStyle = styled.div`
       
   .linkNav:hover {
     transform: none; 
-    box-shadow: none;
-    border: none;
-    outline: none;
     filter: drop-shadow(0 0 0.1em rgba(255, 255, 255, 0.8));
   }
         
-  .topicNav:hover {
+  .navLink:hover {
     filter: drop-shadow(0 0 0.3em rgba(255, 255, 255, 0.7));
     transform: scale(1.1);
   }
   
-  .mobile {
+  .menuToggleIcon {
     display: none;
     color: #fff;
     cursor: pointer;
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+    z-index: 1000;
   }
 
-  // RESPONSIVO
-    @media (max-width: 1024px) {
-    .menuLeft,
-    .menuRight {
-      gap: 0.5rem;
+  @media (max-width: 1024px) {
+    .navLink {
+      font-size: 1rem;
+      padding: 0 15px;
     }
-    .underNav {
-      width: 20rem;
-    }
-    .topicNav {
-      font-size: 1.2rem; 
+
+    .navSectionLeft,
+    .navSectionRight {
+      gap: 1rem;
     }
   }
 
   @media (max-width: 768px) {
-    .menuLeft,
-    .menuRight {
+    .navSectionLeft,
+    .navSectionRight {
       display: none;
     }
-    .underNav {
-      width: 25rem;
-      margin-left: 2%;
- 
+
+    .menuToggleIcon {
+        display: block ;
     }
-    .mobile {
-      display: block; 
-      position: absolute;
-      top: 2.5rem;
-      left: 42rem;
-      width: 2rem;
+
+    .underNav {
+      width: 18rem;
+      padding: 0.5rem;
     }
   }
 
-  @media (max-width: 690px) {
-    .menuLeft,
-    .menuRight {
-      display: none;
-    }
+  @media (max-width: 480px) {
     .underNav {
-      width: 25rem;
-      margin-left: 10%;
+      width: 14rem;
     }
-    .mobile {
-      display: block; 
-      position: absolute;
-      top: 2.5rem;
-      left: 45rem;
-      width: 2rem;
 
+    .navLink {
+      font-size: 0.95rem;
+      padding: 0 10px;
+    }
+
+    .menuToggleIcon {
+      top: 1rem;
+      right: 0.8rem;
     }
   }
 
-  @media (max-width: 414px) {
-    .header {
-      padding: 0 0.5rem;  
-    }
-    .topicNav {
-      font-size: 1.2rem; 
-    }
+    @media (max-width: 360px) {
     .underNav {
-      width: 15rem; 
-      margin-left: 0.5%;
+      width: 14rem;
     }
-    .mobile {
-      position: absolute;
-      left: 22rem;
-      top: 2.5rem;
-      width: 2rem;
 
+    .navLink {
+      font-size: 0.95rem;
+      padding: 0 10px;
     }
-  }
-  
-    @media (max-width: 430px) {
-    .header {
-      padding: 0 0.5rem;  
-    }
-    .topicNav {
-      font-size: 1.2rem; 
-    }
-    .underNav {
-      width: 15rem; 
-      margin-left: 0.5%;
-    }
-    .mobile {
-      position: absolute;
-      left: 22rem;
+
+    .menuToggleIcon {
       top: 1.5rem;
-    }
-  }
-    @media (max-width: 375px) {
-      .homeContainer{
-        max-width: 100%;
-        display: flex;
-      }
-    .underNav {
-      width: 15rem; 
-      margin-left: 10%
-    }
-    .mobile {
-      position: absolute;
-      left: 22rem;
-      top: 1.5rem;
+      right: 0.8rem;
+      size: 30px;
+      /* width: 350px; */
     }
   }
 
