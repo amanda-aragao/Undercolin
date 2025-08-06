@@ -11,12 +11,7 @@ interface MenuProps {
 }
 
 export function Menu({ menuIsVisible, setMenuIsVisible }: MenuProps) {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+
   return (<>
 
     <MenuStyle isVisible={menuIsVisible}>
@@ -26,7 +21,6 @@ export function Menu({ menuIsVisible, setMenuIsVisible }: MenuProps) {
         <a className='topicosMenu' href="/historia">HISTÓRIA</a>
         <a className='topicosMenu' href='/home'>AGENDA</a>
         <a className='topicosMenu' href="/contato">CONTATO</a>
-        <a className='topicosMenu' onClick={() => scrollToSection('-')}>MATERIAL</a>
         <a className='topicosMenu' href="/merch">LOJINHA</a>
         <a className='topicosMenu' href="/underfest">UNDERFEST</a>
       </aside>
