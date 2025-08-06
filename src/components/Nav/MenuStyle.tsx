@@ -5,7 +5,6 @@ interface MenuStyleProps {
 }
 
 export const MenuStyle = styled.section<MenuStyleProps>`
-  // display: ${props => (props.isVisible ? 'block' : 'none')};
   position: fixed;
   display: flex;
   width: 20%;

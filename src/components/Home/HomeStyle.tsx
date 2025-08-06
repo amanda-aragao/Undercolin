@@ -21,7 +21,7 @@ export const HomeStyle = styled.div`
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: center; 
 }
 
   .navSectionLeft,
@@ -51,7 +51,6 @@ export const HomeStyle = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 1;
   }
   .underNav {
     width: 20rem;
