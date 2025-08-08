@@ -19,7 +19,7 @@ export function Underfest() {
         <h2 className='titleUnderfest'>UNDERFEST</h2>
         <hr className='detailLine' />
         <section className='selectUnderfest'>
-          <h2 className='textUnderfest'>CONHEÇA NOSSO FESTIVAL COM O PROPÓSITO DE MOVIMENTAR AS BANDAS E COMÉRCIO LOCAIS
+          <h2 className='textUnderfest'>CONHEÇA NOSSO FESTIVAL COM O PROPÓSITO DE MOVIMENTAR AS BANDAS E COMÉRCIO LOCAL
           </h2>
           <p className='subTitle'>
             O UNDERFEST É UM FESTIVAL ORGANIZADO ANUALMENTE PELA BANDA UNDERCOLIN DE FORMA 100% INDEPENDENTE. <br />
