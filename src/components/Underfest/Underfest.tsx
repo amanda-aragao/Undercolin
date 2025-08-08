@@ -19,28 +19,28 @@ export function Underfest() {
           <h3 className='titleBands'>BANDAS QUE PARTICIPANTES</h3>
           <div className='bands'>
             <Link to='https://www.instagram.com/aphoyceh2core/' target='_blanck' >
-              <img src='./src/assets/bandasUnderfest/Aphoyce.png' alt='bandaAphoyce' width={250} />
+              <img src='../../src/assets/bandasUnderfest/Aphoyce.png' alt='bandaAphoyce' width={250} />
             </Link>
             <Link to='https://www.instagram.com/cannonofhate/' target='_blanck'>
-              <img src='./src/assets/bandasUnderfest/COH.png' alt='bandaCannonOfHate' width={450} />
+              <img src='../../src/assets/bandasUnderfest/COH.png' alt='bandaCannonOfHate' width={450} />
             </Link>
             <Link to='https://www.instagram.com/triunfeoficial/' target='_blanck'>
-              <img src='./src/assets/bandasUnderfest/triunfe.png' alt='bandaTriunfe' width={450} />
+              <img src='../../assets/bandasUnderfest/triunfe.png' alt='bandaTriunfe' width={450} />
             </Link>
             <Link to='https://www.instagram.com/undercolin_/' target='_blanck'>
-              <img src='./src/assets/bandasUnderfest/undercolin.png' alt='bandaUnderColin' width={190} />
+              <img src='../../assets/bandasUnderfest/undercolin.png' alt='bandaUnderColin' width={190} />
             </Link>
             <Link to='https://www.instagram.com/undercolin_/' target='_blanck'>
-              <img src='./src/assets/bandasUnderfest/NEET.png' alt='bandaUnderColin' width={190} />
+              <img src='../../assets/bandasUnderfest/NEET.png' alt='bandaUnderColin' width={190} />
             </Link>
             <Link to='https://www.instagram.com/undercolin_/' target='_blanck'>
-              <img src='./src/assets/bandasUnderfest/rabujentus.png' alt='bandaUnderColin' width={300} />
+              <img src='../../assets/bandasUnderfest/rabujentus.png' alt='bandaUnderColin' width={300} />
             </Link>
             <Link to='https://www.instagram.com/undercolin_/' target='_blanck'>
-              <img src='./src/assets/bandasUnderfest/DDT.png' alt='bandaUnderColin' width={350} />
+              <img src='../../assets/bandasUnderfest/DDT.png' alt='bandaUnderColin' width={350} />
             </Link>
             <Link to='https://www.instagram.com/undercolin_/' target='_blanck'>
-              <img src='./src/assets/bandasUnderfest/EP.png' alt='bandaUnderColin' width={350} />
+              <img src='../../assets/bandasUnderfest/EP.png' alt='bandaUnderColin' width={350} />
             </Link>
           </div>
 

@@ -8,19 +8,21 @@ import foto3 from '../../assets/material/material3.jpg';
 
 function SpotifySingle() {
   return (
-    <div style={{
-      display: 'flex',
-      alignItems: 'center',
-      // gap: '20px',
-      padding: '20px',
-      paddingBottom: '60px',
-      margin: '0 auto',
-      width: '50%',
-      alignSelf: 'center',
-      justifyContent: 'center'
-    }}>
+    <div className="spotifySingle"
+      style={{
+        display: 'flex',
+        alignItems: 'center',
+        padding: '20px',
+        paddingBottom: '50px',
+        width: '100%',
+        height: "352",
+        margin: '0 auto',
+        justifyContent: 'center'
+      }}>
 
       < iframe
+        className="spotifyIframe"
+
         style={{ borderRadius: '12px' }}
         src="https://open.spotify.com/embed/track/3MAFVGKEVV9EgO1lQnPqcc?utm_source=generator"
         width="100%"
@@ -67,7 +69,7 @@ export function Material() {
           </button>
         </div>
       </div>
-      <div className='spotifySingle'>
+      <div className='spotifySingleWrapper'>
         <SpotifySingle />
       </div>
 

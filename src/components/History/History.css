@@ -1,86 +1,68 @@
-.historyContainer {
-  /* margin-top: 12rem; */
-  align-items: center;
+.historySection {
+  background: linear-gradient(135deg, #1b1b1b, #0f0f0f);
+  color: #fff;
+  padding: 4rem 1rem;
 }
 
 .textAndImageHistory {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: center;
-  /* align-items: stretch; */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
   margin: 0 auto;
-  gap: 5rem;
-  flex-wrap: wrap;
-  padding: 2rem;
 }
 
 .textContainer {
-  flex: 1 1 400px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 1.5em;
-  border: #fff solid 1px;
-  border-radius: 3%;
-  padding: 3rem;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
-  max-width: 600px;
-  /* min-height: 100%; */
+  gap: 1rem;
 }
-
 
 .titleHistory {
-  display: flex;
-  padding: 0;
-  color: #fff;
-  font-family: 'DIN Condensed Web', roboto, sans;
-  font-size: 3rem;
-  letter-spacing: 2px;
-  justify-content: center;
-  align-items: center;
-}
-
-.textHistory {
-  color: #fff;
-  font-family: 'DIN Condensed Web', roboto, sans;
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  font-weight: bold;
   text-transform: uppercase;
-  font-size: 1.6rem;
-  text-align: left;
-  line-height: 1.6;
-  letter-spacing: 0.5px;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+  font-family: "DIN Condensed Web";
+  background: linear-gradient(90deg, #a8010f, #f8b729);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.fotoShow {
-  flex: 1 1 300px;
-  display: flex;
-  max-width: 500px;
-  height: auto;
-  border-radius: 3%;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.6);
+.textContent p {
+  line-height: 1.8;
+  margin-bottom: 1rem;
+  font-size: 1.30rem;
+  color: #ddd;
+  font-family: "DIN Condensed Web";
+  text-align: justify;
 }
 
-.detalLineHistory {
-  margin: 1rem 0;
-  /* width: 100%; */
-  max-width: 2250px;
-  color: #fff;
-  display: flex;
+.fotoShow img {
+  width: 90%;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.fotoShow img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
 }
 
 @media (max-width: 768px) {
   .textAndImageHistory {
-    flex-direction: column;
-    padding: 1rem;
-  }
-
-  .textContainer,
-  .fotoShow {
-    width: 90%;
-    max-width: 100%;
-  }
-
-  .textHistory {
-    font-size: 1.4rem;
+    grid-template-columns: 1fr;
     text-align: center;
+  }
+
+  .textContent p {
+    font-size: 1rem;
+  }
+
+  .fotoShow {
+    margin-top: 1rem;
   }
 }
