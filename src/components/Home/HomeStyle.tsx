@@ -7,11 +7,13 @@ export const HomeStyle = styled.div`
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    height: 5rem;
     background-color: rgb(30, 31, 36);
     position: relative;
     box-sizing: border-box;
-    padding: 0 1rem; // Ajuste de padding para evitar overflow
+    padding: 0 1rem;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    height: 100px;
 
   }
 
@@ -22,6 +24,27 @@ export const HomeStyle = styled.div`
     display: flex;
     align-items: center;
     justify-content: center; 
+
+}
+
+
+  .homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgb(30, 31, 36);
+    color: #fff;
+  }
+
+  .sectionMaterial {
+    margin-top: 2rem;
+  }
+
+  .navSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
   .navSectionLeft,
@@ -34,8 +57,7 @@ export const HomeStyle = styled.div`
   .navLink {
     padding: 0px 25px;
     font-family: "DIN Condensed Web";
-    font-size: 1rem;
-    font-weight: bold; 
+    font-size: 1.5rem;
     letter-spacing: 1px;
     text-decoration: none; 
     color: #fff; 

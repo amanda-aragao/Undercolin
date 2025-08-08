@@ -5,7 +5,34 @@ import './Material.css';
 import foto1 from '../../assets/material/material1.jpg';
 import foto2 from '../../assets/material/material2.jpg';
 import foto3 from '../../assets/material/material3.jpg';
-import { Link } from 'react-router-dom';
+
+function SpotifySingle() {
+  return (
+    <div style={{
+      display: 'flex',
+      alignItems: 'center',
+      // gap: '20px',
+      padding: '20px',
+      paddingBottom: '60px',
+      margin: '0 auto',
+      width: '50%',
+      alignSelf: 'center',
+      justifyContent: 'center'
+    }}>
+
+      < iframe
+        style={{ borderRadius: '12px' }}
+        src="https://open.spotify.com/embed/track/3MAFVGKEVV9EgO1lQnPqcc?utm_source=generator"
+        width="100%"
+        height="352"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+        loading="lazy"
+        title="Undercolin Single"
+      />
+    </div >
+  );
+}
+
 
 export function Material() {
   return (
@@ -39,10 +66,11 @@ export function Material() {
             <span className="visually-hidden">Next</span>
           </button>
         </div>
-        <Link to="https://linktr.ee/undercolin" className='linkMaterial'>
-          <a> CLIQUE AQUI E CONFIRA OS NOSSOS CONTEÚDOS</a>
-        </Link>
       </div>
+      <div className='spotifySingle'>
+        <SpotifySingle />
+      </div>
+
     </>
   );
 }

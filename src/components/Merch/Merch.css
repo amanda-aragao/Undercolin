@@ -21,7 +21,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 5rem;
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -30,7 +30,6 @@ body {
   width: 100%;
   height: auto;
   object-fit: cover;
-  /* Mantém a proporção da imagem */
 }
 
 

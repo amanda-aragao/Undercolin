@@ -3,12 +3,15 @@
   display: block;
   margin-top: 8rem;
   margin-bottom: 5rem;
-  background-color: #242424;
+  background-color: #d0cccb;
+  justify-self: center;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0), 0 0 35px rgb(224, 224, 250), 0 0 5px rgb(0, 0, 0);
+
 }
 
 
 img {
-  width: 70%;
+  width: 50%;
 }
 
 @media (max-width: 768px) {
@@ -27,6 +30,6 @@ img {
   }
 
   img {
-    width: 75%;
+    width: 95%;
   }
 }
