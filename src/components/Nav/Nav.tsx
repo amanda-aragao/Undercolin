@@ -1,7 +1,7 @@
 import { Menu } from './Menu.tsx';
 import { HomeStyle } from '../Home/HomeStyle.tsx';
 import { IoIosMenu } from "react-icons/io";
-import { Link as RouterLink } from 'react-router-dom';
+import { Link, Link as RouterLink } from 'react-router-dom';
 import underFont from '../../assets/images/underFont.png';
 import PropTypes from 'prop-types';
 
@@ -25,8 +25,12 @@ export function Nav({ menuIsVisible, setMenuIsVisible }: MenuProps) {
           <div className="headerContent">
 
             <div className="navSectionLeft">
-              <a className='navLink' href="/historia">HISTÓRIA</a>
-              <a className='navLink'>CONTATO</a>
+              <RouterLink to="/historia" className='linkNav'>
+                <a className='navLink' href="/historia">HISTÓRIA</a>
+              </RouterLink>
+              <Link to="https://linktr.ee/undercolin" className='linkNav'>
+                <a className='navLink'>CONTATO</a>
+              </Link>
             </div>
             <div className="logoContainer">
               <RouterLink to="/home" className='linkNav'>
@@ -35,8 +39,12 @@ export function Nav({ menuIsVisible, setMenuIsVisible }: MenuProps) {
             </div>
 
             <div className="navSectionRight">
-              <a className='navLink' href='/merch'>MERCH</a>
-              <a className='navLink' onClick={() => scrollToSection('materialUnderfest')}>UNDERFEST</a>
+              <RouterLink to="/merch" className='linkNav'>
+                <a className='navLink' href='/merch'>MERCH</a>
+              </RouterLink>
+              <RouterLink to="/home" className='linkNav'>
+                <a className='navLink' onClick={() => scrollToSection('materialUnderfest')}>UNDERFEST</a>
+              </RouterLink>
             </div>
           </div>
         </header>

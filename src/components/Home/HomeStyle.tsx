@@ -85,6 +85,10 @@ export const HomeStyle = styled.div`
     transform: none; 
     filter: drop-shadow(0 0 0.1em rgba(255, 255, 255, 0.8));
   }
+
+  .linkNav{
+    text-decoration: none;
+  }
         
   .navLink:hover {
     filter: drop-shadow(0 0 0.3em rgba(255, 255, 255, 0.7));
