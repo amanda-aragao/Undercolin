@@ -98,4 +98,12 @@
   align-items: center;
   position: relative;
   z-index: 3;
+  width: 100%;
+}
+
+
+.bandaUndercolin img {
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
 }
