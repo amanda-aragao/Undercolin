@@ -5,7 +5,7 @@ interface MerchProps {
   menuIsVisible: boolean;
   setMenuIsVisible: (isVisible: boolean) => void;
 }
-export function Merch({ menuIsVisible, setMenuIsVisible }: MerchProps) {
+function Merch({ menuIsVisible, setMenuIsVisible }: MerchProps) {
   return (
     <>
       <Nav menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />
@@ -46,3 +46,4 @@ export function Merch({ menuIsVisible, setMenuIsVisible }: MerchProps) {
     </>
   )
 }
+export default Merch;

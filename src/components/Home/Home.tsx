@@ -10,7 +10,7 @@ interface HomeProps {
   menuIsVisible: boolean;
   setMenuIsVisible: (isVisible: boolean) => void;
 }
-export function Home({ menuIsVisible, setMenuIsVisible }: HomeProps) {
+function Home({ menuIsVisible, setMenuIsVisible }: HomeProps) {
   return (
     <>
       <Nav menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />
@@ -29,3 +29,4 @@ export function Home({ menuIsVisible, setMenuIsVisible }: HomeProps) {
     </>
   );
 }
+export default Home;

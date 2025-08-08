@@ -7,7 +7,7 @@ interface HistoryProps {
   setMenuIsVisible: (isVisible: boolean) => void;
 }
 
-export function History({ menuIsVisible, setMenuIsVisible }: HistoryProps) {
+function History({ menuIsVisible, setMenuIsVisible }: HistoryProps) {
   return (
     <>
       <Nav menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />
@@ -51,3 +51,4 @@ export function History({ menuIsVisible, setMenuIsVisible }: HistoryProps) {
     </>
   );
 }
+export default History;
