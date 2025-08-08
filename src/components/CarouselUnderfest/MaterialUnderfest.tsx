@@ -2,15 +2,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './MaterialUnderfest.css';
 import underfest2 from '../../assets/underfest/Underfest2.jpg';
-import underfest3 from '../../assets/underfest/Underfest3.png';
-import underfest4 from '../../assets/underfest/Underfest4.png';
-import underfest5 from '../../assets/underfest/Underfest5.png';
-import underfest6 from '../../assets/underfest/Underfest6.png';
-import underfest7 from '../../assets/underfest/Underfest7.png';
-import underfest8 from '../../assets/underfest/Underfest8.png';
-import underfest9 from '../../assets/underfest/Underfest9.png';
-import underfest10 from '../../assets/underfest/Underfest10.png';
-import underfest from '../../assets/underfest/Underfest.png';
+import underfest3 from '../../assets/underfest/Underfest3.jpg';
+import underfest4 from '../../assets/underfest/Underfest4.jpg';
+import underfest5 from '../../assets/underfest/Underfest5.jpg';
+import underfest6 from '../../assets/underfest/Underfest6.jpg';
+import underfest7 from '../../assets/underfest/Underfest7.jpg';
+import underfest8 from '../../assets/underfest/Underfest8.jpg';
+import underfest9 from '../../assets/underfest/Underfest9.jpg';
+import underfest10 from '../../assets/underfest/Underfest10.jpg';
+import underfest from '../../assets/underfest/Underfest.jpg';
 
 export function MaterialUnderfest() {
   return (
