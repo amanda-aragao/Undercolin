@@ -9,16 +9,14 @@ import foto3 from '../../assets/material/material3.jpg';
 function SpotifySingle() {
   return (
 
-    <div className="spotifySingleWrapper">
-      <iframe
-
-        className="spotifyIframe"
-        src="https://open.spotify.com/embed/album/6JDby5uA7M7LSVnIPAmeZa?utm_source=generator&theme=1"
-        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-        loading="lazy"
-        title="Undercolin Single"
-      />
-    </div>
+    // <div className="spotifySingleWrapper">
+    // <iframe
+    //   src="https://open.spotify.com/embed/album/6JDby5uA7M7LSVnIPAmeZa?utm_source=generator&theme=1"
+    //   allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+    //   loading="lazy"
+    //   title="Undercolin Single"
+    // />
+    <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/album/6JDby5uA7M7LSVnIPAmeZa?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>    // </div>
   );
 }
 
