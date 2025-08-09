@@ -1,11 +1,16 @@
 import './Merch.css';
 import { Nav } from '../Nav/Nav.tsx';
+import m1 from '../../assets/merch/m1.png';
+import m2 from '../../assets/merch/m2.png';
+import m3 from '../../assets/merch/m3.png';
+import m4 from '../../assets/merch/m4.png';
+
 
 interface MerchProps {
   menuIsVisible: boolean;
   setMenuIsVisible: (isVisible: boolean) => void;
 }
-export function Merch({ menuIsVisible, setMenuIsVisible }: MerchProps) {
+function Merch({ menuIsVisible, setMenuIsVisible }: MerchProps) {
   return (
     <>
       <Nav menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />
@@ -16,22 +21,22 @@ export function Merch({ menuIsVisible, setMenuIsVisible }: MerchProps) {
 
         <div className='image-grid'>
           <div className='grid-item'>
-            <img src='/src/assets/merch/3.png' className='grid-image' />
+            <img src={m3} className='grid-image' />
             <h1 className='tituloCamisa'>T-SHIRT BRANCA GUARÁ VERMELHO </h1>
             <h3 className='precoCamisa'>R$ 70,00</h3>
           </div>
           <div className='grid-item'>
-            <img src='/src/assets/merch/STORE.png' className='grid-image' />
+            <img src={m4} className='grid-image' />
             <h1 className='tituloCamisa'>T-SHIRT PRETA GUARÁ VERMELHO </h1>
             <h3 className='precoCamisa'>R$ 70,00</h3>
           </div>
           <div className='grid-item'>
-            <img src='/src/assets/merch/1.png' className='grid-image' />
+            <img src={m1} className='grid-image' />
             <h1 className='tituloCamisa'>T-SHIRT BRANCA UNDERCOLIN</h1>
             <h3 className='precoCamisa'>R$ 75,00</h3>
           </div>
           <div className='grid-item'>
-            <img src='/src/assets/merch/2.png' className='grid-image' />
+            <img src={m2} className='grid-image' />
             <h1 className='tituloCamisa'>T-SHIRT PRETA UNDERCOLIN</h1>
             <h3 className='precoCamisa'>R$ 75,00</h3>
           </div>
@@ -46,3 +51,4 @@ export function Merch({ menuIsVisible, setMenuIsVisible }: MerchProps) {
     </>
   )
 }
+export default Merch;

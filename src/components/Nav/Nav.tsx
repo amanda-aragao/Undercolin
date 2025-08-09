@@ -1,7 +1,7 @@
 import { Menu } from './Menu.tsx';
 import { HomeStyle } from '../Home/HomeStyle.tsx';
 import { IoIosMenu } from "react-icons/io";
-import { Link as RouterLink } from 'react-router-dom';
+import { Link, Link as RouterLink } from 'react-router-dom';
 import underFont from '../../assets/images/underFont.png';
 import PropTypes from 'prop-types';
 
@@ -22,27 +22,41 @@ export function Nav({ menuIsVisible, setMenuIsVisible }: MenuProps) {
     <>
       <HomeStyle>
         <header className='header'>
-          <div className="menuLeft">
-            <a className='topicNav' href="/home">AGENDA</a>
-            <a className='topicNav' href="/historia">HISTÓRIA</a>
-            <a className='topicNav'>CONTATO</a>
-          </div>
+          <div className="headerContent">
 
-          <RouterLink to="/home" className='linkNav'>
-            <img src={underFont} alt='Undercolin Fonte' className='underNav' />
-          </RouterLink>
+            <div className="navSectionLeft">
+              <RouterLink to="/historia" className='linkNav'>
+                <a className='navLink' href="/historia">HISTÓRIA</a>
+              </RouterLink>
+              <Link to="https://linktr.ee/undercolin" target='_blank' className='linkNav'>
+                <a className='navLink'>CONTATO</a>
+              </Link>
+            </div>
+            <div className="logoContainer">
+              <RouterLink to="/home" className='linkNav'>
+                <img src={underFont} alt='Undercolin Fonte' className='underNav' />
+              </RouterLink>
+            </div>
 
-          <div className="menuRight">
-            <a className='topicNav' onClick={() => scrollToSection('material')}>MATERIAL</a>
-            <a className='topicNav' href='/merch'>MERCH</a>
-            <a className='topicNav' onClick={() => scrollToSection('materialUnderfest')}>UNDERFEST</a>
+            <div className="navSectionRight">
+              <RouterLink to="/merch" className='linkNav'>
+                <a className='navLink' href='/merch'>MERCH</a>
+              </RouterLink>
+              <RouterLink to="/home" className='linkNav' state={{ scrollTo: 'materialUnderfest' }}>
+                <a className='navLink' onClick={() => scrollToSection('materialUnderfest')}>UNDERFEST</a>
+              </RouterLink>
+            </div>
           </div>
-          <IoIosMenu onClick={() => setMenuIsVisible(true)} className="mobile" size={35} />
-          <Menu
-            menuIsVisible={menuIsVisible}
-            setMenuIsVisible={setMenuIsVisible}
-          />
         </header>
+        <IoIosMenu onClick={() => setMenuIsVisible(true)}
+          className="menuToggleIcon"
+          size={35}
+          aria-label="Abrir menu"
+          role="button" />
+        <Menu
+          menuIsVisible={menuIsVisible}
+          setMenuIsVisible={setMenuIsVisible}
+        />
       </HomeStyle >
     </>
   );

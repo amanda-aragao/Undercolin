@@ -36,7 +36,7 @@ function App() {
           <img src={insta} className="instagram" alt="Instagram" />
         </Link>
 
-        <a href="https://linktr.ee/undercolin" target="_blank" className='cta-button'>CLIQUE AQUI PARA CONHECER NOSSO SOM</a>
+        <a href="https://linktr.ee/undercolin" target="_blank" className='description'>CLIQUE AQUI PARA CONHECER NOSSO SOM</a>
       </main>
 
     </div>

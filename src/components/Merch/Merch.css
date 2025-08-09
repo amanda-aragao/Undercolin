@@ -1,9 +1,13 @@
-.merchContainer{
-  margin-top: 12rem;
+body {
+  width: 100%;
+}
+
+.merchContainer {
+  margin-top: 5rem;
 }
 
 
-.tituloMerch{
+.tituloMerch {
   margin: 0;
   color: rgb(255, 255, 255);
   font-family: 'DIN Condensed Web', roboto, sans;
@@ -16,8 +20,8 @@
 .image-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 5rem; 
-  width: 60%;
+  gap: 5rem;
+  width: 50%;
   margin: 0 auto;
 }
 
@@ -25,7 +29,7 @@
   margin-top: 4rem;
   width: 100%;
   height: auto;
-  object-fit: cover; /* Mantém a proporção da imagem */
+  object-fit: cover;
 }
 
 
@@ -36,36 +40,35 @@
 }
 
 .detalheLinhaMerch2 {
-  width: 73.5%;
   margin-left: 30rem;
   color: #fff;
   display: flex;
 }
 
-.precoCamisa{
+.precoCamisa {
   font-family: 'DIN Condensed Web', roboto, sans;
-  display:flex;
-  color:#fff;
+  display: flex;
+  color: #fff;
   padding-top: 0.5rem;
   justify-content: center;
   letter-spacing: 2px;
   font-size: 1.3rem;
 }
 
-.tituloCamisa{
+.tituloCamisa {
   font-family: 'DIN Condensed Web', roboto, sans;
-  display:flex;
-  color:#fff;
+  display: flex;
+  color: #fff;
   padding-top: 1rem;
   justify-content: center;
   letter-spacing: 2px;
   font-size: 1.4rem;
 }
 
-.infoMerch{
+.infoMerch {
   font-family: 'DIN Condensed Web', roboto, sans;
   display: inline-block;
-  color:#fff;
+  color: #fff;
   padding-top: 1rem;
   justify-content: center;
   letter-spacing: 2px;
@@ -77,9 +80,46 @@
 
 }
 
-.sectionMerch{
+.sectionMerch {
   padding: 5rem;
-  background: linear-gradient(to bottom, #242424 1%, #000 100%); 
-  /* background-color: #000; */
-  /* padding: 2rem 0; */
+  background: linear-gradient(to bottom, #242424 1%, #000 100%);
+}
+
+
+@media (max-width: 768px) {
+  .image-grid {
+    grid-template-columns: 1fr;
+    width: 80%;
+    gap: 2rem;
+  }
+
+  .tituloMerch {
+    font-size: 2.2rem;
+    text-align: center;
+  }
+
+  .detalheLinhaMerch1,
+  .detalheLinhaMerch2 {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .sectionMerch {
+    padding: 2rem;
+  }
+
+  .infoMerch {
+    padding: 2rem;
+    font-size: 1.2rem;
+  }
+
+  .tituloCamisa {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  .precoCamisa {
+    font-size: 1.1rem;
+    text-align: center;
+  }
 }

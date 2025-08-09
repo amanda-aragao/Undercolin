@@ -1,38 +1,63 @@
 import styled from 'styled-components';
 
 export const HomeStyle = styled.div`
-  width: 100%;
-  background-color:  rgb(30, 31, 36);
-  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.5);
-  z-index: 100; 
-
 
   .header {
-    width: 100%;
     display: flex;
-    justify-content: center;
+    width: 100%;
+    justify-content: space-between;
     align-items: center;
-    height: 7rem;
+    background-color: rgb(30, 31, 36);
     position: relative;
-    padding: 0 1rem;
     box-sizing: border-box;
+    padding: 0 1rem;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.8);
+    z-index: 1000;
+    height: 100px;
+
   }
 
-  .menuLeft,
-  .menuRight {
+  .headerContent {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
     display: flex;
-    gap: 1.5rem;
+    align-items: center;
+    justify-content: center; 
+
+}
+
+
+  .homeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: rgb(30, 31, 36);
+    color: #fff;
+  }
+
+  .sectionMaterial {
+    margin-top: 2rem;
+  }
+
+  .navSection {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
-  .topicNav {
-    padding: 0px 10px;
-    // display: inline-block; 
-    // margin: 0;
-    // margin-top: 1rem;
+  .navSectionLeft,
+  .navSectionRight {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+}
+
+  .navLink {
+    padding: 0px 25px;
     font-family: "DIN Condensed Web";
     font-size: 1.5rem;
-    font-weight: bold; 
     letter-spacing: 1px;
     text-decoration: none; 
     color: #fff; 
@@ -43,14 +68,14 @@ export const HomeStyle = styled.div`
       0.5px  0.5px 0 grey;
     transition: transform 0.3s;
   }
-  
-  a:hover {
-    filter: drop-shadow(0 0 0.5em rgba(255, 255, 255, 0.7));
-    transform: scale(1.1);
+
+  .logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-    
   .underNav {
-    width: 25rem;
+    width: 20rem;
     height: auto;
     margin: 0 auto;
     padding: 1rem;
@@ -58,79 +83,88 @@ export const HomeStyle = styled.div`
       
   .linkNav:hover {
     transform: none; 
-    box-shadow: none;
-    border: none;
-    outline: none;
     filter: drop-shadow(0 0 0.1em rgba(255, 255, 255, 0.8));
   }
+
+  .linkNav{
+    text-decoration: none;
+  }
         
-  .topicNav:hover {
-    filter: drop-shadow(0 0 0.5em rgba(255, 255, 255, 0.7));
+  .navLink:hover {
+    filter: drop-shadow(0 0 0.3em rgba(255, 255, 255, 0.7));
     transform: scale(1.1);
   }
   
-  .mobile {
+  .menuToggleIcon {
     display: none;
     color: #fff;
     cursor: pointer;
-    /* position: absolute; */
-    /* right: 1rem; */
-    /* top: 50%; */
-    /* transform: translateY(-50%); */
-    /* cursor: pointer; */
-
+    position: absolute;
+    top: 1.2rem;
+    right: 1rem;
+    z-index: 1000;
   }
 
-  // RESPONSIVO
+  @media (max-width: 1024px) {
+    .navLink {
+      font-size: 1rem;
+      padding: 0 15px;
+    }
+
+    .navSectionLeft,
+    .navSectionRight {
+      gap: 1rem;
+    }
+  }
 
   @media (max-width: 768px) {
-    .menuLeft,
-    .menuRight {
+    .navSectionLeft,
+    .navSectionRight {
       display: none;
     }
-    .underNav {
-      width: 25rem;
+
+    .menuToggleIcon {
+        display: block ;
     }
-    .mobile {
-      display: block; 
+
+    .underNav {
+      width: 18rem;
+      padding: 0.5rem;
     }
   }
+
   @media (max-width: 480px) {
-    .header {
-      padding: 0 0.5rem; /* Reduz o padding em telas menores */
-    }
-    .topicNav {
-      font-size: 1.2rem; /* Reduz o tamanho da fonte em telas menores */
-    }
     .underNav {
-      width: 10rem; /* Ajusta a largura da imagem em telas menores */
+      width: 14rem;
     }
-    // .mobile {
-    //   left: 70rem; /* Ajusta a posição do ícone de menu em telas menores */
-    // }
+
+    .navLink {
+      font-size: 0.95rem;
+      padding: 0 10px;
+    }
+
+    .menuToggleIcon {
+      top: 1rem;
+      right: 0.8rem;
+    }
   }
 
     @media (max-width: 360px) {
-    .header {
-      // padding: 0 0.5rem; /* Reduz ainda mais o padding em telas muito pequenas */
-      width: 100%;
-      }
     .underNav {
-      width: 10rem; 
+      width: 14rem;
     }
-    .mobile {
-      left: 20rem; 
-      width: 1.5rem; 
+
+    .navLink {
+      font-size: 0.95rem;
+      padding: 0 10px;
+    }
+
+    .menuToggleIcon {
+      top: 1.5rem;
+      right: 0.8rem;
+      size: 30px;
+      /* width: 350px; */
     }
   }
-    @media (max-width: 320px) {
-    .underNav {
-      width: 8rem;
-    }
 
-    .mobile {
-      right: 0.5rem;
-    }
-
-}
 `;

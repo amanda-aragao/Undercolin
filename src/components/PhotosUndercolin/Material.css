@@ -1,54 +1,85 @@
-  .sectionMaterial {
-    background: linear-gradient(to bottom, #242424 1%, #000 100%);
-    width: 100%;
+.materialContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#carouselUndercolin {
+  margin-top: 2rem;
+}
+
+.contentInner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.carouselInner {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.carouselIndicators {
+  position: absolute;
+  bottom: 5px;
+  /* coloca indicadores no rodapé */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  padding: 5px 10px;
+}
+
+.spotifySingleWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+  width: 100%;
+}
+
+.spotifySingle {
+  width: 100%;
+  max-width: 1200px;
+  overflow: hidden;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spotifyIframe {
+  width: 85%;
+  height: auto;
+  min-height: 180px;
+  border-radius: 12px;
+  display: block;
+}
+
+.spotifyIframe body {
+  background-color: #9d0032;
+  color: #fff;
+
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  .spotifyIframe {
+    height: 190px;
   }
+}
 
-  .carousel-inner {
-    width: 100%;
-    max-width: 1200px;
-    height: 100%;
-    margin: auto
+@media (max-width: 480px) {
+  .spotifyIframe {
+    height: 160px;
   }
+}
 
-  #carousel-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8rem;
-
+@media (max-width: 375px) {
+  .spotifyIframe {
+    height: 150px;
   }
-
-  .material-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .material-container a {
-    padding: 2rem;
-    font-size: 20px;
-    color: #fff;
-    z-index: 1;
-    text-decoration: none;
-    position: relative;
-  }
-
-  #imagemMaterial {
-    width: 100%;
-    height: 100%;
-    /* object-fit: contain; */
-  }
-
-  .detalheLinha {
-    margin: 0rem;
-    width: 100%;
-    max-width: 2900px;
-    color: #ffffff;
-    display: flex;
-  }
-
-
-  .carousel-control-next,
-  .carousel-control-prev {
-    width: 5%;
-  }
+}

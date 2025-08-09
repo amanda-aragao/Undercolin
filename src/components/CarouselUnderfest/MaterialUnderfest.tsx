@@ -1,6 +1,16 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './MaterialUnderfest.css';
+import underfest2 from '../../assets/underfest/Underfest2.jpg';
+import underfest3 from '../../assets/underfest/Underfest3.jpg';
+import underfest4 from '../../assets/underfest/Underfest4.jpg';
+import underfest5 from '../../assets/underfest/Underfest5.jpg';
+import underfest6 from '../../assets/underfest/Underfest6.jpg';
+import underfest7 from '../../assets/underfest/Underfest7.jpg';
+import underfest8 from '../../assets/underfest/Underfest8.jpg';
+import underfest9 from '../../assets/underfest/Underfest9.jpg';
+import underfest10 from '../../assets/underfest/Underfest10.jpg';
+import underfest from '../../assets/underfest/Underfest.jpg';
 
 export function MaterialUnderfest() {
   return (
@@ -21,43 +31,43 @@ export function MaterialUnderfest() {
           </div>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="../src/assets/underfest/Underfest2.jpg" className="d-block w-100" id="imagemUnderfest" alt="Imagem referente às bandas do Underfest" />
+              <img src={underfest2} className="d-block w-100" id="imagemUnderfest" alt="Imagem referente às bandas do Underfest" />
 
             </div>
             <div className="carousel-item">
-              <img src="../src/assets/underfest/Underfest3.jpg" className="d-block w-100" loading="lazy"
+              <img src={underfest3} className="d-block w-100" loading="lazy"
                 alt="Imagem referente às bandas do Underfest" />
             </div>
             <div className="carousel-item">
-              <img src="../src/assets/underfest/Underfest4.jpg" className="d-block w-100" loading="lazy"
+              <img src={underfest4} className="d-block w-100" loading="lazy"
                 alt="Imagem referente às bandas do Underfest" />
             </div>
             <div className="carousel-item">
-              <img src="../src/assets/underfest/Underfest5.jpg" className="d-block w-100" loading="lazy"
+              <img src={underfest5} className="d-block w-100" loading="lazy"
                 alt="Imagem referente às bandas do Underfest" />
             </div>
             <div className="carousel-item">
-              <img src="../src/assets/underfest/Underfest6.jpg" className="d-block w-100" loading="lazy"
+              <img src={underfest6} className="d-block w-100" loading="lazy"
                 alt="Imagem referente às bandas do Underfest" />
             </div>
             <div className="carousel-item">
-              <img src="../src/assets/underfest/Underfest7.jpg" className="d-block w-100" loading="lazy"
+              <img src={underfest7} className="d-block w-100" loading="lazy"
                 alt="Imagem referente às bandas do Underfest" />
             </div>
             <div className="carousel-item">
-              <img src="../src/assets/underfest/Underfest8.jpg" className="d-block w-100" loading="lazy"
+              <img src={underfest8} className="d-block w-100" loading="lazy"
                 alt="Imagem referente às bandas do Underfest" />
             </div>
             <div className="carousel-item">
-              <img src="../src/assets/underfest/Underfest9.jpg" className="d-block w-100" loading="lazy"
+              <img src={underfest9} className="d-block w-100" loading="lazy"
                 alt="Imagem referente às bandas do Underfest" />
             </div>
             <div className="carousel-item">
-              <img src="../src/assets/underfest/Underfest10.jpg" className="d-block w-100" loading="lazy"
+              <img src={underfest10} className="d-block w-100" loading="lazy"
                 alt="Imagem referente às bandas do Underfest" />
             </div>
             <div className="carousel-item">
-              <img src="../src/assets/underfest/Underfest.jpg" className="d-block w-100" loading="lazy"
+              <img src={underfest} className="d-block w-100" loading="lazy"
                 alt="Imagem referente às bandas do Underfest" />
             </div>
           </div>
