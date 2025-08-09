@@ -58,8 +58,10 @@
   display: block;
 }
 
-.spotifySingle body {
-  background-color: transparent;
+.spotifyIframe body {
+  background-color: #9d0032;
+  color: #fff;
+
 }
 
 /* Responsividade */
