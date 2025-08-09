@@ -28,7 +28,6 @@ function Material() {
       <div className="materialContainer">
         <div className="contentInner" id="carouselContainer">
 
-          {/* Carrossel */}
           <div id="carouselUndercolin" className="carousel slide">
             <div className="carouselIndicators">
               <button
@@ -85,7 +84,6 @@ function Material() {
             </button>
           </div>
 
-          {/* Spotify */}
           <div className="spotifySingleWrapper">
             <SpotifySingle />
           </div>

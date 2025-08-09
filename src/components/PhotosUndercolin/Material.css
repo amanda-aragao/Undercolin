@@ -1,44 +1,80 @@
 .materialContainer {
   display: flex;
-  justify-content: center;
-  padding: 2rem 1rem;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#carouselUndercolin {
+  margin-top: 2rem;
+}
+
+.contentInner {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.carouselInner {
+  width: 100%;
+  margin-bottom: 2rem;
 }
 
 .carouselIndicators {
   position: absolute;
-  bottom: 1px;
+  bottom: 5px;
+  /* coloca indicadores no rodapé */
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  padding: 5px 10px;
 }
 
-
-#carouselContainer {
-  display: flex;
-  flex-direction: column;
-  /* coloca carrossel e spotify na vertical */
-  align-items: center;
-  /* centraliza */
-  gap: 2rem;
-  /* espaço entre carrossel e spotify */
-  width: 100%;
-  max-width: 800px;
-  /* largura máxima para ambos */
-}
-
-.carouselInner img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-}
-
-/* Wrapper do Spotify */
 .spotifySingleWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
   width: 100%;
 }
 
-/* Ajusta o iframe do Spotify */
-.spotifyIframe {
+.spotifySingle {
   width: 100%;
-  height: 12rem;
-  /* altura ajustada */
-  border: none;
-  border-radius: 0.75rem;
+  max-width: 1200px;
+  /* height: 260px; */
+  overflow: hidden;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spotifyIframe {
+  width: 85%;
+  height: auto;
+  min-height: 180px;
+  border-radius: 12px;
+  display: block;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+  .spotifyIframe {
+    height: 190px;
+  }
+}
+
+@media (max-width: 480px) {
+  .spotifyIframe {
+    height: 160px;
+  }
+}
+
+@media (max-width: 375px) {
+  .spotifyIframe {
+    height: 150px;
+  }
 }
