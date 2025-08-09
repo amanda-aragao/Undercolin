@@ -40,7 +40,7 @@ export const MenuStyle = styled.section<MenuStyleProps>`
     top: 1rem;
     right: 1rem;
     color: #fff;
-    transform: rotate(45deg);
+    transform: rotate(90deg);
     width: 2rem;
     height: 2rem;
     cursor: pointer;

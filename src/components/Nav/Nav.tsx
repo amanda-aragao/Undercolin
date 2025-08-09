@@ -28,7 +28,7 @@ export function Nav({ menuIsVisible, setMenuIsVisible }: MenuProps) {
               <RouterLink to="/historia" className='linkNav'>
                 <a className='navLink' href="/historia">HISTÓRIA</a>
               </RouterLink>
-              <Link to="https://linktr.ee/undercolin" className='linkNav'>
+              <Link to="https://linktr.ee/undercolin" target='_blank' className='linkNav'>
                 <a className='navLink'>CONTATO</a>
               </Link>
             </div>
@@ -42,7 +42,7 @@ export function Nav({ menuIsVisible, setMenuIsVisible }: MenuProps) {
               <RouterLink to="/merch" className='linkNav'>
                 <a className='navLink' href='/merch'>MERCH</a>
               </RouterLink>
-              <RouterLink to="/home" className='linkNav'>
+              <RouterLink to="/home" className='linkNav' state={{ scrollTo: 'materialUnderfest' }}>
                 <a className='navLink' onClick={() => scrollToSection('materialUnderfest')}>UNDERFEST</a>
               </RouterLink>
             </div>

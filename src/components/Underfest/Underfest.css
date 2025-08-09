@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
     url('../../assets/images/underfest.jpg');
@@ -11,72 +10,18 @@
   background-position: center;
 }
 
-.selectUnderfest {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  width: 100%;
-  background-size: cover;
-  z-index: 1;
-}
-
 .detailLine {
-  margin: 0;
   width: 100%;
   color: #fff;
-  display: flex;
-
 }
 
 .titleUnderfest {
   font-size: 3rem;
-  margin: 0;
   font-family: "DIN Condensed Web", sans-serif;
   letter-spacing: 2px;
   color: #fff;
-  display: flex;
-  justify-items: center;
-  justify-content: center;
-  align-items: center;
   padding: 2rem;
-}
-
-.titleBands {
-  font-size: 3rem;
-  font-family: "DIN Condensed Web", sans-serif;
-  letter-spacing: 2px;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem;
-  margin-top: 5rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-}
-
-.subTitle {
-  font-family: "DIN Condensed Web", sans-serif;
   text-align: center;
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  font-size: 1.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 10px;
-  padding: 1rem 2.5rem;
-  border-style: solid;
-  border-width: 1px;
-  /* border-color: rgba(255, 255, 255, 0.5); */
-  box-shadow: 1px 1px 5px rgb(0, 0, 0), 0 0 15px rgb(221, 218, 218), 0 0 5px rgb(0, 0, 0);
-
-  transition: background-color 0.3s ease,
-    box-shadow 0.3s ease;
-  /* background-color: rgba(255, 254, 254, 0.8); */
-  /* width: 50%; */
-
 }
 
 .textUnderfest {
@@ -84,26 +29,156 @@
   font-size: 1.8rem;
   color: #fff;
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
   margin: 3rem 0;
-  /* padding: 1rem; */
-  width: 100%;
+  padding: 0 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.bands {
-  padding: 0 5rem;
+.subtitleUnderfest {
+  font-family: "DIN Condensed Web", sans-serif;
+  text-align: center;
+  color: #fff;
+  font-size: 1.2rem;
+  margin: 1rem auto 3rem;
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 1px 5px rgb(0, 0, 0), 0 0 15px rgb(221, 218, 218), 0 0 5px rgb(0, 0, 0);
+  max-width: 900px;
+  line-height: 1.6;
+}
+
+.titleBands {
+  font-size: 3rem;
+  font-family: "DIN Condensed Web", sans-serif;
+  letter-spacing: 2px;
+  color: #fff;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-top: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Grid de bandas */
+.bandsGrid {
+  padding: 0 2rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  z-index: 3;
+  gap: 2rem;
+  justify-items: center;
   width: 100%;
 }
 
+.bandItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.bandaUndercolin img {
-  width: 150px;
-  height: auto;
-  margin: 0 auto;
+.bandItem img {
+  width: 100%;
+  max-width: 150px;
+  height: 150px;
+  /* força altura igual */
+  object-fit: contain;
+  /* mantém proporção da imagem */
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.bandItem img:hover {
+  transform: scale(1.05);
+}
+
+.materialSection {
+  margin-top: 4rem;
+}
+
+@media (max-width: 1024px) {
+  .bandsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .titleUnderfest {
+    font-size: 2.5rem;
+  }
+
+  .textUnderfest {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .bandsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .titleUnderfest,
+  .titleBands {
+    font-size: 2rem;
+  }
+
+  .subtitleUnderfest {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 90%;
+  }
+}
+
+@media (max-width: 410px) {
+  .bandsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .bandItem img {
+    max-width: 100px;
+    height: 100px;
+  }
+
+  .titleUnderfest,
+  .titleBands {
+    font-size: 1.8rem;
+  }
+
+  .textUnderfest {
+    font-size: 0.8rem;
+    width: 80%;
+    justify-self: center;
+  }
+
+  .subtitleUnderfest {
+    font-size: 0.6rem;
+    width: 80%;
+  }
+}
+
+
+@media (max-width: 360px) {
+  .bandsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .bandItem img {
+    max-width: 100px;
+    height: 100px;
+  }
+
+  .titleUnderfest,
+  .titleBands {
+    font-size: 1.8rem;
+  }
+
+  .textUnderfest {
+    font-size: 0.8rem;
+    width: 80%;
+    justify-self: center;
+  }
+
+  .subtitleUnderfest {
+    font-size: 0.6rem;
+    width: 80%;
+  }
 }
