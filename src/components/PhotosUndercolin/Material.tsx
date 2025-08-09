@@ -8,8 +8,10 @@ import foto3 from '../../assets/material/material3.jpg';
 
 function SpotifySingle() {
   return (
-    <div className="spotifySingle">
+
+    <div className="spotifySingleWrapper">
       <iframe
+
         className="spotifyIframe"
         src="https://open.spotify.com/embed/album/6JDby5uA7M7LSVnIPAmeZa?utm_source=generator&theme=1"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
@@ -83,10 +85,7 @@ function Material() {
               <span className="visually-hidden">Próximo</span>
             </button>
           </div>
-
-          <div className="spotifySingleWrapper">
-            <SpotifySingle />
-          </div>
+          <SpotifySingle />
 
         </div>
       </div>
