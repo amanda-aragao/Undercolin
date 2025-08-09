@@ -43,7 +43,6 @@
 .spotifySingle {
   width: 100%;
   max-width: 1200px;
-  /* height: 260px; */
   overflow: hidden;
   margin-top: 2rem;
   display: flex;
@@ -57,6 +56,10 @@
   min-height: 180px;
   border-radius: 12px;
   display: block;
+}
+
+.spotifySingle body {
+  background-color: transparent;
 }
 
 /* Responsividade */
