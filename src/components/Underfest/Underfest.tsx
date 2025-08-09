@@ -17,10 +17,10 @@ export function Underfest() {
     { link: 'https://www.instagram.com/cannonofhate/', img: cannonOfhate, alt: 'bandaCannonOfHate' },
     { link: 'https://www.instagram.com/triunfeoficial/', img: triunfe, alt: 'bandaTriunfe' },
     { link: 'https://www.instagram.com/undercolin/', img: undercolin, alt: 'bandaUndercolin' },
-    { link: 'https://www.instagram.com/undercolin_/', img: NEET, alt: 'NEET' },
-    { link: 'https://www.instagram.com/undercolin_/', img: rabujentus, alt: 'Rabujentus' },
-    { link: 'https://www.instagram.com/undercolin_/', img: DDT, alt: 'DDT' },
-    { link: 'https://www.instagram.com/undercolin_/', img: EP, alt: 'EP' },
+    { link: 'https://www.instagram.com/nuncatokyo/', img: NEET, alt: 'NEET' },
+    { link: 'https://www.instagram.com/rabujentus', img: rabujentus, alt: 'Rabujentus' },
+    { link: 'https://www.instagram.com/somosdepoisdatempestade/', img: DDT, alt: 'DDT' },
+    { link: 'https://www.instagram.com/entrepontosrock/', img: EP, alt: 'EP' },
   ];
 
   return (

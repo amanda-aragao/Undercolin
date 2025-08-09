@@ -4,11 +4,10 @@
   margin-top: 8rem;
   margin-bottom: 3rem;
   background-color: #d0cccb;
-  justify-self: center;
+  text-align: center;
+  /* centraliza elementos inline e inline-block dentro */
   box-shadow: 1px 1px 5px rgb(0, 0, 0), 0 0 35px rgb(224, 224, 250), 0 0 5px rgb(0, 0, 0);
-
 }
-
 
 img {
   width: 50%;
