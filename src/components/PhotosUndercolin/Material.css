@@ -29,16 +29,22 @@
 }
 
 .spotifySingleWrapper {
+  background: #9d0032;
+  padding: 10px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(157, 0, 50, 0.9);
   max-width: 850px;
   width: 100%;
-  margin: 3rem auto;
-  background: rgb(157, 0, 50);
-  border-radius: 12px;
-  box-shadow: 0 0 20px rgba(255, 248, 246, 0.36);
+  box-sizing: border-box;
   overflow: hidden;
+  position: relative;
+  min-height: 220px;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* margin: 5rem auto; */
+  /* centraliza o container na tela */
+
 }
 
 
@@ -59,9 +65,11 @@
 .spotifyIframe {
   width: 100%;
   height: 180px !important;
-  border: none;
   border-radius: 12px;
+  border: none;
   background: transparent;
+  display: block;
+  overflow: hidden;
 }
 
 .spotifySingleWrapper {
@@ -73,10 +81,10 @@
     width: 90%;
   }
 
-  .spotifySingle {
+  /* .spotifySingle {
     max-width: 100%;
     padding: 8px 12px;
-  }
+  } */
 
   .spotifyIframe {
     height: 200px !important;
@@ -88,14 +96,13 @@
     width: 95%;
   }
 
-  .spotifySingle {
+  /* .spotifySingle {
     max-width: 100%;
     padding: 6px 10px;
-  }
+  } */
 
   .spotifyIframe {
     height: 170px !important;
-    /* um pouco menor pra caber melhor */
   }
 }
 
@@ -106,9 +113,9 @@
     padding: 8px;
   }
 
-  .spotifySingle {
+  /* .spotifySingle {
     padding: 6px 8px;
-  }
+  } */
 
   .spotifyIframe {
     height: 160px !important;
