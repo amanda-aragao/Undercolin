@@ -1,11 +1,19 @@
-#root {
+.hero {
   width: 100%;
+  max-width: 600px;
   height: 100vh;
-  margin: 0 auto;
-  display: block;
+  /* usa toda a altura da viewport */
+  display: flex;
   flex-direction: column;
+  justify-content: center;
+  /* centraliza verticalmente */
   align-items: center;
+  /* centraliza horizontalmente */
   text-align: center;
+  padding: 1rem;
+  position: relative;
+  margin: 0 auto;
+  box-sizing: border-box;
 }
 
 .logos {
@@ -13,16 +21,25 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  padding: 1.5rem;
-  margin-top: 5%;
+  /* padding: 1.5rem; */
+  /* margin-top: 5%; */
 }
 
 .logo-passarinho {
   position: absolute;
-  margin-left: 55%;
-  display: flex;
+  /* bottom: 35px; */
+  /* sobe o passarinho acima da logo-font */
+  /* left: 16%; */
+  width: 40%;
+  margin-left: 42rem;
+  margin-bottom: 21rem;
+  transform: translateX(-50%);
   animation: moveUpDown 3s infinite alternate ease-in-out;
-  z-index: 1;
+  z-index: 2;
+  /* fica acima da logo-font */
+  /* width: 100px; */
+  /* ajuste o tamanho que preferir */
+  height: auto;
 }
 
 @keyframes moveUpDown {
@@ -37,9 +54,13 @@
 
 .logo-link {
   position: relative;
+  /* para posicionar o passarinho absoluto relativo a esse container */
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  /* empilha as imagens verticalmente */
+  width: max-content;
 }
 
 .logo-passarinho:hover {
@@ -48,10 +69,14 @@
 }
 
 .logo-font {
-  display: flex;
+  margin-top: 60px;
+  /* dá espaço para o passarinho ficar acima sem encostar */
+  width: 900px;
+  /* ajuste o tamanho que preferir */
   height: auto;
-  margin-top: 12rem;
-  width: 60%;
+  filter: drop-shadow(4px 4px 0.2em rgba(170, 167, 163, 0.7));
+  z-index: 1;
+  position: relative;
 }
 
 .logo-font {
@@ -59,7 +84,6 @@
 }
 
 .card {
-  margin-top: 45px;
   background-color: #242424;
   display: flex;
   flex-wrap: wrap;
@@ -67,14 +91,15 @@
   align-items: center;
   gap: 1rem;
   border: none;
-  padding: 0.5rem;
+  padding: 2rem;
   flex-direction: row;
   text-decoration: none;
+  margin-top: 5px;
 }
 
 .card img {
   width: auto;
-  height: 35px;
+  height: 50px;
   transition: transform 0.3s ease, filter 0.3s ease;
   cursor: pointer;
 }
@@ -89,18 +114,22 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  /* gap: 1.5rem; */
+  width: 100%;
+
 }
 
 .description {
   background-color: #252525;
   color: #f8eed4;
   font-family: "DIN Condensed Web";
-  padding: 0.40rem 1rem;
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
   text-decoration: none;
   border-radius: 0.5rem;
   box-shadow: 0 0 5px rgba(228, 222, 215, 0.3);
   transition: background-color 0.3s ease, transform 0.2s ease;
+  z-index: 2;
 }
 
 .description:hover {
@@ -119,165 +148,89 @@ main {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .logo-passarinho {
-    margin-left: 65%;
-    top: 13%;
-    width: 25%;
-    height: 25em;
-    z-index: 1;
+    /* top: -5px; */
+    width: 40%;
+    margin-left: 25rem;
+    top: -10rem;
   }
 
   .logo-font {
-    width: 80%;
-    margin-top: 20rem;
-  }
-
-  .description {
-    font-size: 1.2rem;
-    color: white;
-  }
-}
-
-@media (min-width: 768px) {
-  .logo-passarinho {
-    height: 20em;
-    width: 20%;
-    margin-bottom: 9%;
-    margin-left: 60%;
-    z-index: 1;
+    width: 600px;
+    margin-top: 45px;
   }
 
   .card img {
-    flex-direction: row;
-    width: 35px;
-    height: 35px;
-    /* size: 150px; */
+    height: 30px;
   }
 
   .description {
     font-size: 1rem;
-    color: white;
   }
 }
 
-@media (max-width: 690px) {
+@media (max-width: 480px) {
   .logo-passarinho {
-    height: 20em;
-    width: 30%;
-    margin-bottom: 1%;
-    top: 13%;
-    z-index: 1;
+    /* top: -5px; */
+    width: 35%;
+    margin-left: 13rem;
+    top: -6.5rem;
   }
 
   .logo-font {
-    width: 80%;
-    margin-top: 20rem;
+    width: 320px;
+    margin-top: 5px;
   }
 
-  .description {
-    font-size: 1.2rem;
-    color: white;
-    width: 70%;
-  }
-}
-
-@media (max-width: 414px) {
-  .logo-passarinho {
-    height: 50%;
-    width: 50%;
-    margin-left: 55%;
-    top: 38%;
-    z-index: 1;
-  }
-
-  .logo-font {
-    width: 90%;
-    margin-top: 20rem;
+  .card img {
+    height: 30px;
   }
 
   .description {
     font-size: 1rem;
-    color: white;
-    width: 100%;
-  }
-}
-
-@media (max-width: 430px) {
-  .logo-passarinho {
-    height: 50%;
-    width: 50%;
-    margin-left: 55%;
-    top: 38%;
-    z-index: 1;
-  }
-
-  .logo-font {
-    width: 90%;
-    margin-top: 20rem;
-  }
-
-  .description {
-    font-size: 1rem;
-    color: white;
-    width: 100%;
   }
 }
 
 @media (max-width: 375px) {
   .logo-passarinho {
-    height: 50%;
-    width: 50%;
-    margin-left: 55%;
-    top: 40%;
-    z-index: 1;
+    /* top: -5px; */
+    width: 40%;
+    margin-left: 12rem;
+    top: -7rem;
   }
 
   .logo-font {
-    width: 90%;
-    margin-top: 20rem;
-  }
-
-  .description {
-    font-size: 0.9rem;
-    color: white;
-    width: 100%;
+    width: 300px;
+    margin-top: 5px;
   }
 
   .card img {
-    width: 30px;
     height: 30px;
   }
 
+  .description {
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 320px) {
   .logo-passarinho {
-    height: 50%;
-    width: 50%;
-    margin-left: 55%;
-    top: 35%;
+    top: -18px;
+    width: 50px;
+    margin-right: 3rem;
   }
 
   .logo-font {
-    width: 95%;
-    margin-top: 15rem;
-  }
-
-  .description {
-    font-size: 0.8rem;
-    color: white;
-    width: 100%;
+    width: 180px;
+    margin-top: 50px;
   }
 
   .card img {
-    width: 30px;
-    height: 30px;
+    height: 25px;
   }
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  .description {
+    font-size: 0.9rem;
   }
 }

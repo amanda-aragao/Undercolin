@@ -11,7 +11,7 @@ function SpotifySingle() {
     <div className="spotifySingle">
       <iframe
         className="spotifyIframe"
-        src="https://open.spotify.com/embed/album/6JDby5uA7M7LSVnIPAmeZa?utm_source=generator"
+        src="https://open.spotify.com/embed/album/6JDby5uA7M7LSVnIPAmeZa?utm_source=generator&theme=1"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
         title="Undercolin Single"

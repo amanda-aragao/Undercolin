@@ -8,6 +8,7 @@
 
 #carouselUndercolin {
   margin-top: 2rem;
+  position: relative;
 }
 
 .contentInner {
@@ -25,60 +26,98 @@
 .carouselIndicators {
   position: absolute;
   bottom: 5px;
-  /* coloca indicadores no rodapé */
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(255, 255, 255, 0.7);
-  border-radius: 8px;
-  padding: 5px 10px;
 }
 
 .spotifySingleWrapper {
-  display: flex;
-  justify-content: center;
-  padding: 1.5rem 0;
+  margin: 3rem auto;
+  background: rgb(157, 0, 50);
+  padding: 10px;
+  max-width: 850px;
   width: 100%;
-}
-
-.spotifySingle {
-  width: 100%;
-  max-width: 1200px;
-  overflow: hidden;
-  margin-top: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(255, 248, 246, 0.363);
   display: flex;
   justify-content: center;
   align-items: center;
+  min-height: 220px;
+  box-sizing: border-box;
+}
+
+
+.spotifySingle {
+  width: 100%;
+  background-color: rgb(157, 0, 50);
+  border-radius: 12px;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  max-width: 800px;
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+
 }
 
 .spotifyIframe {
-  width: 85%;
-  height: auto;
-  min-height: 180px;
+  width: 100%;
+  height: 180px !important;
+  /* altura maior para evitar corte do título */
   border-radius: 12px;
+  border: none;
   display: block;
 }
 
-.spotifyIframe body {
-  background-color: #9d0032;
-  color: #fff;
+.spotifySingleWrapper {
+  min-height: 200px;
+  /* mesma altura do iframe */
 }
 
 /* Responsividade */
-
 @media (max-width: 768px) {
+  .spotifySingleWrapper {
+    width: 90%;
+  }
+
+  .spotifySingle {
+    max-width: 100%;
+    padding: 8px 12px;
+  }
+
   .spotifyIframe {
-    height: 190px;
+    height: 200px !important;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 414px) {
+  .spotifySingleWrapper {
+    width: 95%;
+  }
+
+  .spotifySingle {
+    max-width: 100%;
+    padding: 6px 10px;
+  }
+
   .spotifyIframe {
-    height: 160px;
+    height: 170px !important;
+    /* um pouco menor pra caber melhor */
   }
 }
+
 
 @media (max-width: 375px) {
+  .spotifySingleWrapper {
+    width: 95%;
+    padding: 8px;
+  }
+
+  .spotifySingle {
+    padding: 6px 8px;
+  }
+
   .spotifyIframe {
-    height: 150px;
+    height: 160px !important;
   }
 }
