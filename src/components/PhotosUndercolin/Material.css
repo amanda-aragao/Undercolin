@@ -28,24 +28,45 @@
   bottom: 5px;
 }
 
-.spotifySingleWrapper {
-  margin: 3rem auto;
-  background: rgb(157, 0, 50);
-  padding: 0;
-  max-width: 850px;
+.spotifyWrapper {
   width: 100%;
+  max-width: 850px;
   border-radius: 12px;
-  box-shadow: 0 0 20px rgba(255, 248, 246, 0.363);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 220px;
-  box-sizing: border-box;
-  overflow: hidden
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 248, 246, 0.36);
+  margin: 3rem auto;
 }
 
+.spotifyWrapper iframe {
+  display: block;
+  width: 100%;
+  height: 352px;
+  border: none;
+}
 
-.spotifySingle {
+/* .spotifySingleWrapper { */
+/* background: rgb(157, 0, 50); */
+/* padding: 10px; */
+/* border-radius: 12px; */
+/* box-shadow: 0 0 20px rgba(128, 126, 126, 0.9); */
+/* max-width: 850px; */
+/* width: 100%; */
+/* box-sizing: border-box; */
+/* overflow: hidden; */
+/* position: relative; */
+/* min-height: 220px; */
+/* display: flex; */
+/* justify-content: center; */
+/* align-items: center; */
+/* margin-right: 5rem; */
+/* margin-left: 10rem; */
+/* margin: 5rem auto; */
+/* centraliza o container na tela */
+
+/* } */
+
+
+/* .spotifySingle {
   width: 100%;
   background-color: rgb(157, 0, 50);
   border-radius: 12px;
@@ -56,33 +77,35 @@
   justify-content: center;
   align-items: center;
   overflow: hidden
-}
+} */
 
-.spotifyIframe {
+
+/* iframe {
   width: 100%;
   height: 180px !important;
   border-radius: 12px;
   border: none;
-  display: block;
   background: transparent;
-
+  display: block;
+  overflow: hidden;
+  margin: 0 auto;
 }
 
 .spotifySingleWrapper {
   min-height: 200px;
-}
+} */
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .spotifySingleWrapper {
     width: 90%;
-  }
+  } */
 
-  .spotifySingle {
+/* .spotifySingle {
     max-width: 100%;
     padding: 8px 12px;
-  }
+  } */
 
-  .spotifyIframe {
+/* .spotifyIframe {
     height: 200px !important;
   }
 }
@@ -90,31 +113,30 @@
 @media (max-width: 414px) {
   .spotifySingleWrapper {
     width: 95%;
-  }
+  } */
 
-  .spotifySingle {
+/* .spotifySingle {
     max-width: 100%;
     padding: 6px 10px;
-  }
+  } */
 
-  .spotifyIframe {
+/* .spotifyIframe {
     height: 170px !important;
-    /* um pouco menor pra caber melhor */
   }
-}
+} */
 
 
-@media (max-width: 375px) {
+/* @media (max-width: 375px) {
   .spotifySingleWrapper {
     width: 95%;
     padding: 8px;
-  }
+  } */
 
-  .spotifySingle {
+/* .spotifySingle {
     padding: 6px 8px;
-  }
+  } */
 
-  .spotifyIframe {
+/* .spotifyIframe {
     height: 160px !important;
-  }
-}
+  } */
+/* } */
