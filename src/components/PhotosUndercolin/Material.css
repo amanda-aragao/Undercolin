@@ -28,6 +28,22 @@
   bottom: 5px;
 }
 
+.spotifyWrapper {
+  width: 100%;
+  max-width: 850px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(255, 248, 246, 0.36);
+  margin: 3rem auto;
+}
+
+.spotifyWrapper iframe {
+  display: block;
+  width: 100%;
+  height: 352px;
+  border: none;
+}
+
 /* .spotifySingleWrapper { */
 /* background: rgb(157, 0, 50); */
 /* padding: 10px; */
