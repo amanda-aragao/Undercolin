@@ -45,10 +45,7 @@
   height: 352px;
   border: none;
   background-color: transparent;
-}
-
-.iframe {
-  background-color: transparent;
+  border-radius: 12px;
 }
 
 @media (max-width: 768px) {
@@ -62,7 +59,7 @@
 @media (max-width: 414px) {
   .spotifyWrapper {
     padding: 1rem;
-    ;
+    border-radius: 12px;
     width: auto;
   }
 }
@@ -72,5 +69,6 @@
     margin-left: 0.9rem;
     margin-right: 0.8rem;
     width: auto;
+    border-radius: 12px;
   }
 }

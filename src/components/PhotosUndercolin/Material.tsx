@@ -15,7 +15,7 @@ function SpotifySingle() {
         height="352"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
         loading="lazy"
-        style={{ border: 'none' }}
+        // style={{ border: 'none' }}
         title="Undercolin Single"
       >
 
