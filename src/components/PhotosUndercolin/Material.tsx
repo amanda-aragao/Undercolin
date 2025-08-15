@@ -10,7 +10,7 @@ function SpotifySingle() {
   return (
 
     <div className="spotifyWrapper">
-      <iframe data-testid="embed-iframe" src="https://open.spotify.com/embed/album/6JDby5uA7M7LSVnIPAmeZa?utm_source=generator"
+      <iframe className="iframe" data-testid="embed-iframe" src="https://open.spotify.com/embed/album/6JDby5uA7M7LSVnIPAmeZa?utm_source=generator"
         width="100%"
         height="352"
         allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"

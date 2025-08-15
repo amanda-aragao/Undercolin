@@ -45,7 +45,10 @@
   height: 352px;
   border: none;
   background-color: transparent;
+}
 
+.iframe {
+  background-color: transparent;
 }
 
 @media (max-width: 768px) {
