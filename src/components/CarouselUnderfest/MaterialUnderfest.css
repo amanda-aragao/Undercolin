@@ -56,19 +56,32 @@
   .carousel-inner {
     aspect-ratio: 3 / 2;
   }
-}
-
-@media (max-width: 375px) {
-  .carousel-inner {
-    aspect-ratio: 2 / 1;
-  }
 
   .carousel-indicators {
     bottom: -15px;
   }
 
-  .materialSection {
-    padding: 0;
-    margin: 0
+  .carousel-control-prev,
+  .carousel-control-next {
+    width: 10%;
+  }
+
+  @media (max-width: 375px) {
+    .carousel-inner {
+      aspect-ratio: 2 / 1;
+    }
+
+    .carousel-indicators {
+      bottom: -15px;
+    }
+
+    .carouselContainer {
+      height: 250px;
+    }
+
+    .materialSection {
+      padding: 0;
+      margin: 0
+    }
   }
 }
