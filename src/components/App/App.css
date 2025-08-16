@@ -135,7 +135,6 @@ main {
 
 @media (max-width: 768px) {
   .logo-passarinho {
-    /* top: -5px; */
     width: 40%;
     margin-left: 25rem;
     top: -10rem;
@@ -150,6 +149,11 @@ main {
     height: 30px;
   }
 
+  .card {
+    padding: 3rem 0rem 0.5rem 0rem;
+    margin: 1rem;
+  }
+
   .description {
     font-size: 1rem;
   }
@@ -157,7 +161,6 @@ main {
 
 @media (max-width: 480px) {
   .logo-passarinho {
-    /* top: -5px; */
     width: 35%;
     margin-left: 13rem;
     top: -6.5rem;
@@ -174,6 +177,12 @@ main {
 
   .description {
     font-size: 1rem;
+  }
+
+
+  .card {
+    padding: 2rem 0rem 0.5rem 0rem;
+    margin: 1rem;
   }
 }
 
@@ -198,6 +207,15 @@ main {
     font-size: 1rem;
     padding: 0.5rem 4rem;
   }
+
+  .card {
+    padding: 2rem 0rem 0.5rem 0rem;
+    margin: 1rem;
+  }
+
+  .main-content {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 320px) {
@@ -218,5 +236,9 @@ main {
 
   .description {
     font-size: 0.9rem;
+  }
+
+  .card {
+    padding: 0rem;
   }
 }
