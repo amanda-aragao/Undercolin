@@ -1,86 +1,80 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './MaterialUnderfest.css';
-import underfest2 from '../../assets/underfest/Underfest2.jpg';
-import underfest3 from '../../assets/underfest/Underfest3.jpg';
-import underfest4 from '../../assets/underfest/Underfest4.jpg';
-import underfest5 from '../../assets/underfest/Underfest5.jpg';
-import underfest6 from '../../assets/underfest/Underfest6.jpg';
-import underfest7 from '../../assets/underfest/Underfest7.jpg';
-import underfest8 from '../../assets/underfest/Underfest8.jpg';
-import underfest9 from '../../assets/underfest/Underfest9.jpg';
-import underfest10 from '../../assets/underfest/Underfest10.jpg';
-import underfest from '../../assets/underfest/Underfest.jpg';
+
+import uf2SrcSet from '../../assets/underfest/Underfest2.jpg?w=320;640;960;1280&format=webp;avif&as=srcset';
+import uf2Fallback from '../../assets/underfest/Underfest2.jpg?w=960&as=url';
+import uf3SrcSet from '../../assets/underfest/Underfest3.jpg?w=320;640;960;1280&format=webp;avif&as=srcset';
+import uf3Fallback from '../../assets/underfest/Underfest3.jpg?w=960&as=url';
+import ufMainSrcSet from '../../assets/underfest/Underfest.jpg?w=320;640;960;1280&format=webp;avif&as=srcset';
+import ufMainFallback from '../../assets/underfest/Underfest.jpg?w=960&as=url';
+
+const slides = [
+  { srcSet: uf2SrcSet, fallback: uf2Fallback },
+  { srcSet: uf3SrcSet, fallback: uf3Fallback },
+  { srcSet: ufMainSrcSet, fallback: ufMainFallback },
+];
 
 export function MaterialUnderfest() {
   return (
-    <>
-      <div className="materialU-container" id="carouselUnderfest-container">
-        <div id="carouselUnderfest" className="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
-          <div className="carousel-indicators">
-            <button type="button" data-bs-target="#carouselUnderfest" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselUnderfest" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselUnderfest" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselUnderfest" data-bs-slide-to="3" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselUnderfest" data-bs-slide-to="4" aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselUnderfest" data-bs-slide-to="5" aria-label="Slide 6"></button>
-            <button type="button" data-bs-target="#carouselUnderfest" data-bs-slide-to="6" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselUnderfest" data-bs-slide-to="7" aria-label="Slide 4"></button>
-            <button type="button" data-bs-target="#carouselUnderfest" data-bs-slide-to="8" aria-label="Slide 5"></button>
-            <button type="button" data-bs-target="#carouselUnderfest" data-bs-slide-to="9" aria-label="Slide 6"></button>
-          </div>
-          <div className="carousel-inner">
-            <div className="carousel-item active">
-              <img src={underfest2} className="d-block w-100" id="imagemUnderfest" alt="Imagem referente às bandas do Underfest" />
-
-            </div>
-            <div className="carousel-item">
-              <img src={underfest3} className="d-block w-100" loading="lazy"
-                alt="Imagem referente às bandas do Underfest" />
-            </div>
-            <div className="carousel-item">
-              <img src={underfest4} className="d-block w-100" loading="lazy"
-                alt="Imagem referente às bandas do Underfest" />
-            </div>
-            <div className="carousel-item">
-              <img src={underfest5} className="d-block w-100" loading="lazy"
-                alt="Imagem referente às bandas do Underfest" />
-            </div>
-            <div className="carousel-item">
-              <img src={underfest6} className="d-block w-100" loading="lazy"
-                alt="Imagem referente às bandas do Underfest" />
-            </div>
-            <div className="carousel-item">
-              <img src={underfest7} className="d-block w-100" loading="lazy"
-                alt="Imagem referente às bandas do Underfest" />
-            </div>
-            <div className="carousel-item">
-              <img src={underfest8} className="d-block w-100" loading="lazy"
-                alt="Imagem referente às bandas do Underfest" />
-            </div>
-            <div className="carousel-item">
-              <img src={underfest9} className="d-block w-100" loading="lazy"
-                alt="Imagem referente às bandas do Underfest" />
-            </div>
-            <div className="carousel-item">
-              <img src={underfest10} className="d-block w-100" loading="lazy"
-                alt="Imagem referente às bandas do Underfest" />
-            </div>
-            <div className="carousel-item">
-              <img src={underfest} className="d-block w-100" loading="lazy"
-                alt="Imagem referente às bandas do Underfest" />
-            </div>
-          </div>
-          <button className="carousel-control-prev" type="button" data-bs-target="#carouselUnderfest" data-bs-slide="prev">
-            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Previous</span>
-          </button>
-          <button className="carousel-control-next" type="button" data-bs-target="#carouselUnderfest" data-bs-slide="next">
-            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-            <span className="visually-hidden">Next</span>
-          </button>
+    <div className="carouselContainer">
+      <div
+        id="carouselUnderfest"
+        className="carousel slide"
+        data-bs-ride="carousel"
+        data-bs-interval="3000"
+      >
+        <div className="carousel-indicators">
+          {slides.map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              data-bs-target="#carouselUnderfest"
+              data-bs-slide-to={i}
+              className={i === 0 ? 'active' : ''}
+              aria-current={i === 0 ? 'true' : undefined}
+              aria-label={`Slide ${i + 1}`}
+            />
+          ))}
         </div>
-      </div >
-    </>
+
+        <div className="carousel-inner">
+          {slides.map((slide, index) => (
+            <div
+              key={index}
+              className={`carousel-item ${index === 0 ? 'active' : ''}`}
+            >
+              <img
+                src={slide.fallback}
+                srcSet={slide.srcSet}
+                sizes="(max-width: 768px) 100vw, 768px"
+                alt={`Slide ${index + 1}`}
+                loading="lazy"
+              />
+            </div>
+          ))}
+        </div>
+
+        <button
+          className="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselUnderfest"
+          data-bs-slide="prev"
+        >
+          <span className="carousel-control-prev-icon" aria-hidden="true" />
+          <span className="visually-hidden">Previous</span>
+        </button>
+
+        <button
+          className="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselUnderfest"
+          data-bs-slide="next"
+        >
+          <span className="carousel-control-next-icon" aria-hidden="true" />
+          <span className="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
   );
 }

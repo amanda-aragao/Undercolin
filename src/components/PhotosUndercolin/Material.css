@@ -54,6 +54,10 @@
     margin-right: 1.5rem;
     width: auto;
   }
+
+  .carouselContainer {
+    height: 300px;
+  }
 }
 
 @media (max-width: 414px) {

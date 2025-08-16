@@ -13,10 +13,10 @@ import EP from '../../assets/bandasUnderfest/EP.png';
 
 export function Underfest() {
   const bandas = [
-    { link: 'https://www.instagram.com/aphoyceh2core/', img: aphoyce, alt: 'logoAphoyce' },
-    { link: 'https://www.instagram.com/cannonofhate/', img: cannonOfhate, alt: 'bandaCannonOfHate' },
-    { link: 'https://www.instagram.com/triunfeoficial/', img: triunfe, alt: 'bandaTriunfe' },
-    { link: 'https://www.instagram.com/undercolin/', img: undercolin, alt: 'bandaUndercolin' },
+    { link: 'https://www.instagram.com/aphoyceh2core/', img: aphoyce, alt: 'Aphoyce' },
+    { link: 'https://www.instagram.com/cannonofhate/', img: cannonOfhate, alt: 'CannonOfHate' },
+    { link: 'https://www.instagram.com/triunfeoficial/', img: triunfe, alt: 'Triunfe' },
+    { link: 'https://www.instagram.com/undercolin/', img: undercolin, alt: 'Undercolin' },
     { link: 'https://www.instagram.com/nuncatokyo/', img: NEET, alt: 'NEET' },
     { link: 'https://www.instagram.com/rabujentus', img: rabujentus, alt: 'Rabujentus' },
     { link: 'https://www.instagram.com/somosdepoisdatempestade/', img: DDT, alt: 'DDT' },
@@ -24,12 +24,12 @@ export function Underfest() {
   ];
 
   return (
-    <div className="underfestContainer" id="materialUnderfest">
-      <hr className="detailLine" />
-      <h2 className="titleUnderfest">UNDERFEST</h2>
-      <hr className="detailLine" />
+    <div className="underfestContainer">
+      <div className="underfestContent">
+        <hr className="detailLine" />
+        <h2 className="titleUnderfest">UNDERFEST</h2>
+        <hr className="detailLine" />
 
-      <section className="underfestContent">
         <h2 className="textUnderfest">
           CONHEÇA NOSSO FESTIVAL COM O PROPÓSITO DE MOVIMENTAR AS BANDAS E COMÉRCIO LOCAL
         </h2>
@@ -54,7 +54,7 @@ export function Underfest() {
         <section className="materialSection">
           <MaterialUnderfest />
         </section>
-      </section>
+      </div>
     </div>
   );
 }
