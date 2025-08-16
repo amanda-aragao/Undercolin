@@ -34,7 +34,6 @@ export const MenuStyle = styled.section<MenuStyleProps>`
       transform: translateX(0%);
     `}
 
-  /* Botão de fechar */
   svg {
     position: absolute;
     top: 1rem;
@@ -79,7 +78,6 @@ export const MenuStyle = styled.section<MenuStyleProps>`
     transform: scale(1.05);
   }
 
-  /* --------------------- RESPONSIVIDADE --------------------- */
   @media (max-width: 1024px) {
     width: 25%;
     max-width: 18rem;
@@ -88,7 +86,7 @@ export const MenuStyle = styled.section<MenuStyleProps>`
   @media (max-width: 768px) {
     width: 70%;
     max-width: none;
-    border-radius: 0; /* remove cantos arredondados pra ocupar melhor */
+    /* border-radius: 0;  */
   }
 
   @media (max-width: 480px) {

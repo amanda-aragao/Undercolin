@@ -8,3 +8,4 @@ declare module '*&as=url' {
   const url: string;
   export default url;
 }
+
