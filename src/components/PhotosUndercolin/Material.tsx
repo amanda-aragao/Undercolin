@@ -3,7 +3,6 @@ import 'bootstrap/dist/js/bootstrap.bundle.min';
 import './Material.css';
 
 
-
 import foto1SrcSet from '../../assets/material/material1.jpg?w=320;640;960;1280&format=webp;avif&as=srcset';
 import foto1Fallback from '../../assets/material/material1.jpg?w=960&as=url';
 

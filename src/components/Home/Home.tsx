@@ -23,7 +23,6 @@ function Home({ menuIsVisible, setMenuIsVisible }: HomeProps) {
       const section = document.getElementById(location.state.scrollTo);
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
-
       }
       setTimeout(() => {
         navigate(location.pathname, { replace: true, state: {} });

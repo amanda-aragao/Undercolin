@@ -46,6 +46,7 @@ import ufMainFallback from '../../assets/underfest/Underfest.jpg?w=960&as=url';
 
 
 const slides = [
+  { srcSet: ufMainSrcSet, fallback: ufMainFallback },
   { srcSet: uf2SrcSet, fallback: uf2Fallback },
   { srcSet: uf3SrcSet, fallback: uf3Fallback },
   { srcSet: uf4SrcSet, fallback: uf4Fallback },
@@ -55,7 +56,6 @@ const slides = [
   { srcSet: uf8SrcSet, fallback: uf8Fallback },
   { srcSet: uf9SrcSet, fallback: uf9Fallback },
   { srcSet: uf10SrcSet, fallback: uf10Fallback },
-  { srcSet: ufMainSrcSet, fallback: ufMainFallback },
 ];
 
 export function MaterialUnderfest() {

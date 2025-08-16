@@ -86,7 +86,6 @@ export const MenuStyle = styled.section<MenuStyleProps>`
   @media (max-width: 768px) {
     width: 70%;
     max-width: none;
-    /* border-radius: 0;  */
   }
 
   @media (max-width: 480px) {
