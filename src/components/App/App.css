@@ -2,13 +2,10 @@
   width: 100%;
   max-width: 600px;
   height: 100vh;
-  /* usa toda a altura da viewport */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* centraliza verticalmente */
   align-items: center;
-  /* centraliza horizontalmente */
   text-align: center;
   padding: 1rem;
   position: relative;
@@ -21,24 +18,17 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  /* padding: 1.5rem; */
-  /* margin-top: 5%; */
 }
 
 .logo-passarinho {
   position: absolute;
-  /* bottom: 35px; */
-  /* sobe o passarinho acima da logo-font */
-  /* left: 16%; */
   width: 40%;
   margin-left: 42rem;
   margin-bottom: 21rem;
   transform: translateX(-50%);
   animation: moveUpDown 3s infinite alternate ease-in-out;
   z-index: 2;
-  /* fica acima da logo-font */
-  /* width: 100px; */
-  /* ajuste o tamanho que preferir */
+
   height: auto;
 }
 
@@ -54,12 +44,10 @@
 
 .logo-link {
   position: relative;
-  /* para posicionar o passarinho absoluto relativo a esse container */
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* empilha as imagens verticalmente */
   width: max-content;
 }
 
@@ -70,9 +58,7 @@
 
 .logo-font {
   margin-top: 60px;
-  /* dá espaço para o passarinho ficar acima sem encostar */
   width: 900px;
-  /* ajuste o tamanho que preferir */
   height: auto;
   filter: drop-shadow(4px 4px 0.2em rgba(170, 167, 163, 0.7));
   z-index: 1;
@@ -89,12 +75,11 @@
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
   border: none;
-  padding: 2rem;
+  padding: 1rem;
   flex-direction: row;
   text-decoration: none;
-  margin-top: 5px;
+  margin: 2rem;
 }
 
 .card img {
@@ -111,11 +96,11 @@
 
 main {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  /* gap: 1.5rem; */
-  width: 100%;
+  margin-bottom: .5rem;
+  width: 50%;
 
 }
 
@@ -123,8 +108,8 @@ main {
   background-color: #252525;
   color: #f8eed4;
   font-family: "DIN Condensed Web";
-  font-size: 2rem;
-  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  padding: 0.5rem 6rem;
   text-decoration: none;
   border-radius: 0.5rem;
   box-shadow: 0 0 5px rgba(228, 222, 215, 0.3);
@@ -211,6 +196,7 @@ main {
 
   .description {
     font-size: 1rem;
+    padding: 0.5rem 4rem;
   }
 }
 
