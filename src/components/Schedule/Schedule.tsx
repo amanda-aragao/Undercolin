@@ -2,7 +2,7 @@ import './Schedule.css';
 
 export function Schedule() {
   return (
-    <section className="sheduleSection">
+    <section className="sheduleSection" id="schedule">
       <h1 className='titleShedule'>AGENDA</h1>
       <section className="sheduleShows">
         <div className="show">

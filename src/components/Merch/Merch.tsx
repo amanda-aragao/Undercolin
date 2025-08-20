@@ -4,6 +4,7 @@ import m1 from '../../assets/merch/m1.png';
 import m2 from '../../assets/merch/m2.png';
 import m3 from '../../assets/merch/m3.png';
 import m4 from '../../assets/merch/m4.png';
+import Footer from '../Footer/Footer.tsx';
 
 
 interface MerchProps {
@@ -46,6 +47,8 @@ function Merch({ menuIsVisible, setMenuIsVisible }: MerchProps) {
             Nossos produtos estão disponíveis em todos os nossos shows e podem ser adquiridos pessoalmente.
           </p>
         </section>
+        <Footer />
+
       </div>
 
     </>

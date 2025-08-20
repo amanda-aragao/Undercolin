@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import storeSrcSet from '../../assets/merch/STORE.png?w=300;600;1200&format=webp;png&as=srcset';
 import storeFallback from '../../assets/merch/STORE.png?w=600&as=url';
+import Footer from '../Footer/Footer.tsx';
 
 
 interface HomeProps {
@@ -42,11 +43,13 @@ function Home({ menuIsVisible, setMenuIsVisible }: HomeProps) {
             alt="Store" />
         </Link>
 
-        <section className='sectionMaterial'>
+        <section className='sectionMaterial' id="material">
           <Material />
         </section>
-
-        <Underfest />
+        <section id="underfest">
+          <Underfest />
+        </section>
+        <Footer />
       </div>
     </>
   );

@@ -1,0 +1,35 @@
+.footer {
+  border-top: 1px solid #d18213;
+  box-shadow: 1px 1px 5px rgb(0, 0, 0), 0 0 15px rgb(17, 16, 16), 0 0 5px rgb(0, 0, 0);
+  background-color: rgb(17, 16, 16);
+  padding: 15px;
+  font-family: "DIN Condensed Web", roboto, sans;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+
+
+.footer-link {
+  font-size: 20px;
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+  color: #fff;
+}
+
+.footer-social {
+  color: #bbb;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-social:hover {
+  color: #d18213;
+}
+
+.underFooter {
+  width: 15rem;
+}
