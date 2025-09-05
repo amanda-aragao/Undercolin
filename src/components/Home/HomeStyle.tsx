@@ -27,18 +27,23 @@ export const HomeStyle = styled.div`
 
 }
 
-
-  .homeContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    background-color: rgb(30, 31, 36);
-    color: #fff;
-  }
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: rgb(30, 31, 36);
+  color: #fff;
+  flex: 1 0 auto; 
+  min-height: 0; 
+  overflow: visible;
+  box-sizing: border-box;
+}
 
   .sectionMaterial {
     margin-top: 2rem;
+    width: 100%;
+
   }
 
   .navSection {

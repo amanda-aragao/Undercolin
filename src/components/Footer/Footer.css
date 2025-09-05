@@ -1,14 +1,34 @@
 .footer {
-  border-top: 1px solid #d18213;
-  box-shadow: 1px 1px 5px rgb(0, 0, 0), 0 0 15px rgb(17, 16, 16), 0 0 5px rgb(0, 0, 0);
+  margin-top: auto;
+  width: 100%;
+  padding: 20px 0px 20px;
   background-color: rgb(17, 16, 16);
-  padding: 15px;
-  font-family: "DIN Condensed Web", roboto, sans;
+  color: #fff;
+  font-family: "DIN Condensed Web", roboto, sans-serif;
   font-weight: bold;
   letter-spacing: 1.5px;
-  color: #fff;
+  overflow: visible;
+  flex-shrink: 0;
 }
 
+.footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  min-height: 80px;
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
 
 .footer-link {
   font-size: 20px;
@@ -31,5 +51,7 @@
 }
 
 .underFooter {
-  width: 15rem;
+  max-width: 200px;
+  width: 100%;
+  height: auto;
 }

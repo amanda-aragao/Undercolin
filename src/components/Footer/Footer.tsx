@@ -17,7 +17,7 @@ function Footer() {
         </div>
 
 
-        <div className="d-flex gap-3">
+        <div className="icons">
           <a href="https://instagram.com/undercolin" target="_blank" rel="noreferrer" className="footer-social">
             <FaInstagram size={30} />
           </a>
