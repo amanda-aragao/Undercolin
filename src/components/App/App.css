@@ -28,7 +28,6 @@
   transform: translateX(-50%);
   animation: moveUpDown 3s infinite alternate ease-in-out;
   z-index: 2;
-
   height: auto;
 }
 
@@ -72,19 +71,17 @@
 .card {
   background-color: #242424;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   border: none;
-  padding: 1rem;
-  flex-direction: row;
+  justify-self: center;
   text-decoration: none;
-  margin: 2rem;
+  margin: 3rem 0rem 1rem 1rem;
 }
 
 .card img {
   width: auto;
-  height: 50px;
+  height: 40px;
   transition: transform 0.3s ease, filter 0.3s ease;
   cursor: pointer;
 }
@@ -96,12 +93,15 @@
 
 main {
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
-  margin-bottom: .5rem;
   width: 50%;
+  margin: 0 auto;
+}
 
+.button-acesso {
+  display: flex;
+  justify-content: center;
+  margin-left: 1rem;
 }
 
 .description {
@@ -109,12 +109,16 @@ main {
   color: #f8eed4;
   font-family: "DIN Condensed Web";
   font-size: 1.5rem;
-  padding: 0.5rem 6rem;
+  padding: 0.2rem 3rem;
   text-decoration: none;
   border-radius: 0.5rem;
   box-shadow: 0 0 5px rgba(228, 222, 215, 0.3);
   transition: background-color 0.3s ease, transform 0.2s ease;
   z-index: 2;
+  margin: 0 auto;
+  cursor: pointer;
+  justify-content: center;
+
 }
 
 .description:hover {
@@ -133,7 +137,7 @@ main {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1270px) {
   .logo-passarinho {
     width: 40%;
     margin-left: 25rem;
@@ -149,89 +153,82 @@ main {
     height: 30px;
   }
 
-  .card {
-    padding: 3rem 0rem 0.5rem 0rem;
-    margin: 1rem;
-  }
-
-  .description {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .logo-passarinho {
-    width: 35%;
-    margin-left: 13rem;
-    top: -6.5rem;
-  }
-
-  .logo-font {
-    width: 320px;
-    margin-top: 5px;
-  }
-
-  .card img {
-    height: 30px;
-  }
-
-  .description {
-    font-size: 1rem;
-  }
-
-
-  .card {
-    padding: 2rem 0rem 0.5rem 0rem;
-    margin: 1rem;
-  }
-}
-
-@media (max-width: 375px) {
-  .logo-passarinho {
-    /* top: -5px; */
-    width: 40%;
-    margin-left: 12rem;
-    top: -7rem;
-  }
-
-  .logo-font {
-    width: 300px;
-    margin-top: 5px;
-  }
-
-  .card img {
-    height: 30px;
-  }
-
   .description {
     font-size: 1rem;
     padding: 0.5rem 4rem;
   }
 
-  .card {
-    padding: 2rem 0rem 0.5rem 0rem;
-    margin: 1rem;
+  .button-acesso {
+    display: flex;
+    justify-content: center;
   }
 
-  .main-content {
+  main {
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 678px) {
   .logo-passarinho {
-    top: -18px;
-    width: 50px;
+    width: 40%;
+    margin-left: 19.9rem;
+    top: -10.5rem;
+  }
+
+  .logo-font {
+    width: 500px;
+    margin-top: 5px;
+  }
+
+  .card img {
+    height: 30px;
+    margin: 0rem;
+  }
+
+  .card a {
+    padding: 2rem 0rem 0.5rem 0rem;
+    margin: 1rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .logo-passarinho {
+    width: 45%;
+    margin-left: 15rem;
+    top: -9.7rem;
+  }
+
+  .logo-font {
+    width: 400px;
+    margin-top: 5px;
+  }
+
+  .card img {
+    height: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .logo-passarinho {
+    top: -45px;
+    width: 90px;
     margin-right: 3rem;
   }
 
   .logo-font {
-    width: 180px;
+    width: 250px;
     margin-top: 50px;
   }
 
   .card img {
-    height: 25px;
+    height: 30px;
   }
 
   .description {
@@ -240,5 +237,42 @@ main {
 
   .card {
     padding: 0rem;
+  }
+
+  .button-acesso {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 320px) {
+  .logo-passarinho {
+    top: -99px;
+    width: 40%;
+    margin-right: 5rem;
+  }
+
+  .logo-font {
+    width: 250px;
+    margin: 0.5rem;
+  }
+
+  .card img {
+    height: 30px;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .button-acesso {
+    display: flex;
+    justify-content: center;
+  }
+
+  main {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
   }
 }
