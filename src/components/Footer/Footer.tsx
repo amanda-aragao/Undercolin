@@ -13,7 +13,7 @@ function Footer() {
         <div className="mb-3 mb-md-0">
           <img src={underFont} alt='Undercolin Fonte' className='underFooter' />
 
-          <p className="mb-0 small">© {new Date().getFullYear()} Todos os direitos reservados</p>
+          <p className="mb-0 small">© {new Date().getFullYear()} TODOS OS DIREITOS RESERVADOS</p>
         </div>
 
 
