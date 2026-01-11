@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import logo from '../../assets/images/underPassarinho.png';
 import insta from '../../assets/images/instagram.png';
 import spotify from '../../assets/images/spotify.png';
-import whatsapp from '../../assets/images/whatsapp.png';
 import youtube from '../../assets/images/youtube.png';
 import underFont from '../../assets/images/underFont.png';
 
@@ -29,16 +28,21 @@ function App() {
       </div>
 
       <main className="main-content">
-        <Link target="_blank" to="https://linktr.ee/undercolin" className="card">
-          <img src={spotify} alt="Spotify" />
-          <img src={youtube} alt="YouTube" />
-          <img src={whatsapp} alt="WhatsApp" />
+        <Link target="_blank" to="https://www.instagram.com/undercolin/" className="card">
           <img src={insta} className="instagram" alt="Instagram" />
         </Link>
-
-        <a href="https://linktr.ee/undercolin" target="_blank" className='description'>CLIQUE AQUI PARA CONHECER NOSSO SOM</a>
+        <Link target="_blank" to="https://open.spotify.com/intl-pt/artist/6nwROjcnQdTIbv2zIu6Frn" className="card">
+          <img src={spotify} className="spotify" alt="Spotify" />
+        </Link>
+        <Link target="_blank" to="https://www.youtube.com/@undercolin" className="card">
+          <img src={youtube} className="youtube" alt="YouTube" />
+        </Link>
       </main>
-
+      <div className='button-acesso'>
+        <Link to="/home" className="description">
+          <a>ACESSAR</a>
+        </Link>
+      </div>
     </div>
 
   );

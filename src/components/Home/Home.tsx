@@ -6,7 +6,10 @@ import { Underfest } from '../Underfest/Underfest.tsx';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import store from '../../assets/merch/STORE.png'
+import storeSrcSet from '../../assets/merch/STORE.png?w=300;600;1200&format=webp;png&as=srcset';
+import storeFallback from '../../assets/merch/STORE.png?w=600&as=url';
+import Footer from '../Footer/Footer.tsx';
+
 
 interface HomeProps {
   menuIsVisible: boolean;
@@ -21,7 +24,6 @@ function Home({ menuIsVisible, setMenuIsVisible }: HomeProps) {
       const section = document.getElementById(location.state.scrollTo);
       if (section) {
         section.scrollIntoView({ behavior: 'smooth' });
-
       }
       setTimeout(() => {
         navigate(location.pathname, { replace: true, state: {} });
@@ -34,15 +36,20 @@ function Home({ menuIsVisible, setMenuIsVisible }: HomeProps) {
       <Nav menuIsVisible={menuIsVisible} setMenuIsVisible={setMenuIsVisible} />
       <div className="homeContainer">
         <Schedule />
+
         <Link to="/merch" className='storeSection'>
-          <img src={store} alt="Descrição da imagem" style={{ cursor: 'pointer' }} />
+          <img src={storeFallback}
+            srcSet={storeSrcSet}
+            alt="Store" />
         </Link>
 
-        <section className='sectionMaterial'>
+        <section className='sectionMaterial' id="material">
           <Material />
         </section>
-
-        <Underfest />
+        <section id="underfest">
+          <Underfest />
+        </section>
+        <Footer />
       </div>
     </>
   );

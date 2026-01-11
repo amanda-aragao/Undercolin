@@ -23,7 +23,7 @@ export function Menu({ menuIsVisible, setMenuIsVisible }: MenuProps) {
         <a className='topicosMenu' href="/historia">HISTÓRIA</a>
         <a className='topicosMenu' href='/home'>AGENDA</a>
         <a className='topicosMenu' href="https://linktr.ee/undercolin" target='_blank'>CONTATO</a>
-        <a className='topicosMenu' href="/merch">LOJINHA</a>
+        <a className='topicosMenu' href="/merch">MERCH</a>
         <RouterLink
           to="/home"
           className="topicosMenu"

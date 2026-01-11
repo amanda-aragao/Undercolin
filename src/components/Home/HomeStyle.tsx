@@ -27,18 +27,23 @@ export const HomeStyle = styled.div`
 
 }
 
-
-  .homeContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    background-color: rgb(30, 31, 36);
-    color: #fff;
-  }
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  background-color: rgb(30, 31, 36);
+  color: #fff;
+  flex: 1 0 auto; 
+  min-height: 0; 
+  overflow: visible;
+  box-sizing: border-box;
+}
 
   .sectionMaterial {
     margin-top: 2rem;
+    width: 100%;
+
   }
 
   .navSection {
@@ -125,6 +130,9 @@ export const HomeStyle = styled.div`
 
     .menuToggleIcon {
         display: block ;
+        top: 2rem;
+        right: 5rem;
+        size: 35px;
     }
 
     .underNav {
@@ -144,12 +152,13 @@ export const HomeStyle = styled.div`
     }
 
     .menuToggleIcon {
-      top: 1rem;
-      right: 0.8rem;
+      top: 2rem;
+      right: 1.5rem;
+      size: 30px;
     }
   }
 
-    @media (max-width: 360px) {
+    @media (max-width: 375px) {
     .underNav {
       width: 14rem;
     }
@@ -160,10 +169,9 @@ export const HomeStyle = styled.div`
     }
 
     .menuToggleIcon {
-      top: 1.5rem;
-      right: 0.8rem;
+      top: 2rem;
+      right: 1rem;
       size: 30px;
-      /* width: 350px; */
     }
   }
 

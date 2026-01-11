@@ -1,6 +1,7 @@
 import { Nav } from '../Nav/Nav.tsx';
 import './History.css';
 import undercolin from '../../assets/material/material6.jpg';
+import Footer from '../Footer/Footer.tsx';
 
 interface HistoryProps {
   menuIsVisible: boolean;
@@ -47,7 +48,10 @@ function History({ menuIsVisible, setMenuIsVisible }: HistoryProps) {
             <img src={undercolin} alt='Banda Undercolin em apresentação ao vivo' />
           </div>
         </div>
+
+
       </section>
+      <Footer />
     </>
   );
 }

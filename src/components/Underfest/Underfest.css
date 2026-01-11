@@ -1,13 +1,21 @@
 .underfestContainer {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
   width: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)),
     url('../../assets/images/underfest.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  ;
+}
+
+.underfestContent {
+  width: 100%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .detailLine {
@@ -25,19 +33,13 @@
 }
 
 .textUnderfest {
-  font-family: "DIN Condensed Web", sans-serif;
   font-size: 1.8rem;
-  color: #fff;
-  text-align: center;
   margin: 3rem 0;
   padding: 0 1rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
 .subtitleUnderfest {
-  font-family: "DIN Condensed Web", sans-serif;
-  text-align: center;
-  color: #fff;
   font-size: 1.2rem;
   margin: 1rem auto 3rem;
   border-radius: 10px;
@@ -46,6 +48,16 @@
   box-shadow: 1px 1px 5px rgb(0, 0, 0), 0 0 15px rgb(221, 218, 218), 0 0 5px rgb(0, 0, 0);
   max-width: 900px;
   line-height: 1.6;
+}
+
+
+.textUnderfest,
+.subtitleUnderfest {
+  font-family: "DIN Condensed Web", sans-serif;
+  color: #fff;
+  text-align: center;
+  max-width: 900px;
+  margin: 1rem auto;
 }
 
 .titleBands {
@@ -60,7 +72,7 @@
 }
 
 .bandsGrid {
-  padding: 0 2rem;
+  margin: 3rem;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
@@ -75,20 +87,20 @@
 }
 
 .bandItem img {
-  width: 100%;
   max-width: 180px;
-  /* height: 150px; */
+  width: 100%;
   object-fit: contain;
-  display: block;
-  transition: transform 0.3s ease;
 }
+
 
 .bandItem img:hover {
   transform: scale(1.05);
 }
 
 .materialSection {
+  width: 100%;
   margin-top: 4rem;
+  padding-bottom: 6rem;
 }
 
 @media (max-width: 1024px) {
@@ -109,6 +121,8 @@
   .bandsGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    margin: 0 auto;
+    padding: 2rem;
   }
 
   .titleUnderfest,
@@ -127,6 +141,8 @@
   .bandsGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    margin: 2rem;
+    padding: 3rem;
   }
 
   .bandItem img {
@@ -152,10 +168,12 @@
 }
 
 
-@media (max-width: 360px) {
+@media (max-width: 395px) {
   .bandsGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+    margin: 0rem;
+    padding: 2rem;
   }
 
   .bandItem img {
@@ -166,6 +184,8 @@
   .titleUnderfest,
   .titleBands {
     font-size: 1.8rem;
+    margin-top: 0.5rem auto;
+    padding: 1rem;
   }
 
   .textUnderfest {

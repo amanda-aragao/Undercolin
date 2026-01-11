@@ -11,13 +11,6 @@ interface MenuProps {
 }
 export function Nav({ menuIsVisible, setMenuIsVisible }: MenuProps) {
 
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   return (
     <>
       <HomeStyle>
@@ -26,10 +19,10 @@ export function Nav({ menuIsVisible, setMenuIsVisible }: MenuProps) {
 
             <div className="navSectionLeft">
               <RouterLink to="/historia" className='linkNav'>
-                <a className='navLink' href="/historia">HISTÓRIA</a>
+                <span className='navLink'>HISTÓRIA</span>
               </RouterLink>
               <Link to="https://linktr.ee/undercolin" target='_blank' className='linkNav'>
-                <a className='navLink'>CONTATO</a>
+                <span className='navLink'>CONTATO</span>
               </Link>
             </div>
             <div className="logoContainer">
@@ -40,10 +33,14 @@ export function Nav({ menuIsVisible, setMenuIsVisible }: MenuProps) {
 
             <div className="navSectionRight">
               <RouterLink to="/merch" className='linkNav'>
-                <a className='navLink' href='/merch'>MERCH</a>
+                <span className='navLink'>MERCH</span>
               </RouterLink>
-              <RouterLink to="/home" className='linkNav' state={{ scrollTo: 'materialUnderfest' }}>
-                <a className='navLink' onClick={() => scrollToSection('materialUnderfest')}>UNDERFEST</a>
+              <RouterLink
+                to="/home"
+                className='navLink'
+                state={{ scrollTo: 'materialUnderfest' }}
+              >
+                UNDERFEST
               </RouterLink>
             </div>
           </div>
